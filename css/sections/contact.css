@@ -1,0 +1,66 @@
+.contact-content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    max-width: 80%;
+}
+
+.contact-desc {
+    font-size: 3vh;
+}
+
+.contact-methods {
+    display: flex;
+
+    width: 100%;
+    max-width: 100vh;
+    justify-content: space-between;
+}
+
+.contact-box {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-left: 1vh;
+
+    width: 25vh;
+    height: 15vh;
+    padding: 2vh;
+
+    border-radius: 1.5vh;
+}
+
+.contact-box p {
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-box i{
+    font-size: 4vh;
+}
+
+.contact-box a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.discord {
+    color: #7289da;
+    border: 2px solid #7289da;
+}
+
+.linkedin {
+    color: #006192;
+    border: 2px solid #006192;
+}
+
+.email {
+    color: #c70a0a;
+    border: 2px solid #c70a0a;
+}
