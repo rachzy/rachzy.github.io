@@ -19,7 +19,7 @@ const projectsSectionContentDiv = document.querySelector(
 const projects: projects = [
   {
     title: "Oncoffee",
-    description: `OnCoffee is an e-commerce plataform that is focused on selling
+    description: `OnCoffee is an e-commerce marketplace that is focused on selling
         everything related to coffee, from simple coffee bags to coffee
         preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).`,
     img: "Oncoffee.png",
