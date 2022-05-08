@@ -1,0 +1,7 @@
+--module amd
+contentDisplayer.ts
+projects.ts
+scrollController.ts
+skillButtons.ts
+terminalTyper.ts
+widgets.ts
