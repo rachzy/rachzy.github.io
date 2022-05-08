@@ -15,22 +15,26 @@
 
 .contact-methods {
     display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
 
     width: 100%;
     max-width: 100vh;
-    justify-content: space-between;
 }
 
 .contact-box {
+    display: flex;
+
     align-items: center;
     justify-content: center;
     text-align: center;
 
     margin-left: 1vh;
 
-    width: 25vh;
-    height: 15vh;
-    padding: 2vh;
+    width: 100%;
+    height: 7vh;
 
     border-radius: 1.5vh;
 }
@@ -52,15 +56,13 @@
 
 .discord {
     color: #7289da;
-    border: 2px solid #7289da;
 }
 
 .linkedin {
-    color: #006192;
-    border: 2px solid #006192;
+    color: #0a95db;
 }
 
 .email {
-    color: #c70a0a;
-    border: 2px solid #c70a0a;
+    color: #ff0000;
 }
+
