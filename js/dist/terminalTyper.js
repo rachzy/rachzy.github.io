@@ -1,4 +1,5 @@
 //Terminal Typer - by rachzy
+const terminal = document.querySelector(".terminal");
 const commandLine = document.querySelector("#command-line");
 const outputLine = document.querySelector("#output-line");
 let text = 'console.log("I love coding");'; //The text that will be written in the command line
@@ -11,7 +12,7 @@ const setOutput = () => {
 let currentTextValue = ">";
 let currentArrPlace = 0;
 const textSplit = text.split("");
-export const startTyper = () => {
+const startTyper = () => {
     const typer = setInterval(() => {
         currentTextValue = `${currentTextValue}${textSplit[currentArrPlace]}`;
         commandLine.textContent = currentTextValue;
@@ -22,3 +23,6 @@ export const startTyper = () => {
         currentArrPlace++;
     }, 100);
 };
+setTimeout(() => {
+    startTyper();
+}, 200);
