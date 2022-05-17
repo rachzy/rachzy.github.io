@@ -1,20 +1,24 @@
 type icons = {
-  class: string,
-  title: string
-  isHTML: boolean
-  innerHTML?: string 
-}[]
+  class: string;
+  title: string;
+  isHTML: boolean;
+  innerHTML?: string;
+}[];
 
 type skill = {
-  id: string,
-  title: string,
-  icons: icons,
-}
+  id: string;
+  title: string;
+  icons: icons;
+};
 
-type skills = skill[]
+type skills = skill[];
 
-const skillButtonsDiv = document.querySelector("#skillbuttons-div") as HTMLDivElement;
-const skillDisclaimerDiv = document.querySelector("#skilldisclaimer-div") as HTMLDivElement;
+const skillButtonsDiv = document.querySelector(
+  "#skillbuttons-div"
+) as HTMLDivElement;
+const skillAboutDiv = document.querySelector(
+  "#skillabout-div"
+) as HTMLDivElement;
 const skillButtons = document.querySelectorAll(".skill-button") as NodeList;
 
 const skills: skills = [
@@ -40,8 +44,9 @@ const skills: skills = [
       {
         class: "",
         title: "TypeScript",
-        innerHTML: '<span class="iconify" style="font-size: 9vh" data-icon="cib:typescript"></span>',
-        isHTML: true
+        innerHTML:
+          '<span class="iconify" style="font-size: 9vh" data-icon="cib:typescript"></span>',
+        isHTML: true,
       },
       {
         class: "fa-brands fa-react",
@@ -94,8 +99,9 @@ const skills: skills = [
       {
         class: "",
         title: "VS Code",
-        innerHTML: '<span class="iconify" style="font-size: 9vh" data-icon="bxl:visual-studio"></span>',
-        isHTML: true
+        innerHTML:
+          '<span class="iconify" style="font-size: 9vh" data-icon="bxl:visual-studio"></span>',
+        isHTML: true,
       },
       {
         class: "fa-brands fa-git-alt",
@@ -105,43 +111,54 @@ const skills: skills = [
       {
         class: "icon-shell",
         title: "Terminal",
-        innerHTML: '<span class="iconify" style="font-size: 9vh" data-icon="bi:terminal-fill"></span>',
-        isHTML: true
-      }
-    ]
-  }
+        innerHTML:
+          '<span class="iconify" style="font-size: 9vh" data-icon="bi:terminal-fill"></span>',
+        isHTML: true,
+      },
+    ],
+  },
 ];
 
-const openSkillButtons = () => {
-  skillDisclaimerDiv.style.display = "none";
-  skillDisclaimerDiv.innerHTML = "";
-  skillButtonsDiv.style.display = "block";
+const openSkillButtons = (): void => {
+  skillAboutDiv.classList.remove("active");
+  
+  setTimeout(() => {
+    skillAboutDiv.style.display = "none";
+    skillAboutDiv.innerHTML = "";
+    skillButtonsDiv.style.display = "block";
+    skillButtonsDiv.classList.add("active");
+  }, 200);
 };
 
-const openSkillDisclaimer = () => {
-  skillButtonsDiv.style.display = "none";
-  skillDisclaimerDiv.style.display = "block";
+const openSkillAbout = (): void => {
+  skillButtonsDiv.classList.remove("active");
+  
+  setTimeout(() => {
+    skillButtonsDiv.style.display = "none";
+    skillAboutDiv.style.display = "block";
+    skillAboutDiv.classList.add("active");
+  }, 200);
 };
 
 skillButtons.forEach((skillButton: Element) => {
-  skillButton.addEventListener("click", () => {
+  skillButton.addEventListener("click", (): void => {
     const { id } = skillButton;
 
     skills.forEach((skill) => {
       if (skill.id !== id) return;
       const title = document.createElement("h1");
       title.textContent = skill.title;
-      skillDisclaimerDiv.appendChild(title);
+      skillAboutDiv.appendChild(title);
 
       skill.icons.forEach((icon) => {
         const newIcon = document.createElement("div");
         newIcon.classList.add("skill-smallbutton");
 
-        if(icon.isHTML) {
+        if (icon.isHTML) {
           newIcon.innerHTML = icon.innerHTML;
         } else {
           let iconIC = document.createElement("i");
-  
+
           const splitIconClasses = icon.class.split(" ");
           splitIconClasses.forEach((iconClass) => {
             iconIC.classList.add(iconClass);
@@ -149,23 +166,22 @@ skillButtons.forEach((skillButton: Element) => {
           newIcon.appendChild(iconIC);
         }
 
-
         const iconTitle = document.createElement("p");
         iconTitle.textContent = icon.title;
         newIcon.appendChild(iconTitle);
 
-        skillDisclaimerDiv.appendChild(newIcon);
+        skillAboutDiv.appendChild(newIcon);
       });
     });
 
     const goBackButton = document.createElement("button");
     goBackButton.textContent = "Go Back";
-    goBackButton.addEventListener("click", (e) => {
+    goBackButton.addEventListener("click", (e): void => {
       e.preventDefault();
       openSkillButtons();
     });
-    skillDisclaimerDiv.appendChild(goBackButton);
+    skillAboutDiv.appendChild(goBackButton);
 
-    openSkillDisclaimer();
+    openSkillAbout();
   });
 });

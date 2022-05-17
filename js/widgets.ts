@@ -6,10 +6,10 @@ type widget = {
 
 type widgets = widget[]
 
-const widgetsDisclaimerDiv = document.querySelector(".widgets-disclaimer") as HTMLDivElement;
-const disclaimerTitle = document.querySelector("#disclaimer-title") as HTMLTitleElement;
-const disclaimerContent = document.querySelector("#disclaimer-content") as HTMLDivElement;
 const widgetsContainer = document.querySelector(".widgets") as HTMLDivElement;
+const widgetsAboutDiv = document.querySelector(".widgets-about") as HTMLDivElement;
+const AboutTitle = document.querySelector("#about-title") as HTMLTitleElement;
+const AboutContent = document.querySelector("#about-content") as HTMLDivElement;
 const widgets = document.querySelectorAll(".widget") as NodeList;
 
 const widgetsResponse: widgets = [
@@ -58,23 +58,14 @@ const widgetsResponse: widgets = [
 ];
 
 const displayWidgets = (): void => {
-  widgetsDisclaimerDiv.classList.remove("active");
-
-  setTimeout(() => {
-    widgetsDisclaimerDiv.style.display = "none";
+    widgetsAboutDiv.style.display = "none";
     widgetsContainer.style.display = "flex";
-    widgetsContainer.classList.add("active");
-  }, 200);
 };
 
-const displayWidgetsDisclaimer = () => {
-  widgetsContainer.classList.remove("active");
-
-  setTimeout(() => {
+const displayWidgetsAbout = () => {
     widgetsContainer.style.display = "none";
-    widgetsDisclaimerDiv.style.display = "flex";
-    widgetsDisclaimerDiv.classList.add("active");
-  }, 200);
+    widgetsAboutDiv.style.display = "flex";
+    widgetsAboutDiv.classList.add("active");
 };
 
 widgets.forEach((widget: Element) => {
@@ -85,9 +76,9 @@ widgets.forEach((widget: Element) => {
 
     widgetsResponse.forEach((wid) => {
       if (wid.id !== id) return;
-      disclaimerTitle.innerHTML = wid.title;
-      disclaimerContent.innerHTML = wid.content;
-      displayWidgetsDisclaimer();
+      AboutTitle.innerHTML = wid.title;
+      AboutContent.innerHTML = wid.content;
+      displayWidgetsAbout();
     });
   });
 });
