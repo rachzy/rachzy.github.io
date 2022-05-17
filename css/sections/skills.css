@@ -20,6 +20,13 @@
   
   #skillbuttons-div {
     display: inline-block;
+    opacity: 0%;
+
+    transition: 0.2s all;
+  }
+
+  #skillbuttons-div.active {
+    opacity: 100%;
   }
   
   #skillbuttons-div i {
@@ -72,16 +79,25 @@
   
     transition: 0.2s all;
   }
+
+  #skillabout-div {
+    opacity: 0%;
+    transition: 0.2s all;
+  }
+
+  #skillabout-div.active {
+    opacity: 100%;
+  }
   
-  #skilldisclaimer-div i {
+  #skillabout-div i {
     font-size: 10vh;
   }
   
-  #skilldisclaimer-div p {
+  #skillabout-div p {
     font-size: 3vh;
   }
   
-  #skilldisclaimer-div button {
+  #skillabout-div button {
     display: block;
   
     background: transparent;
@@ -89,20 +105,20 @@
     border: 1px solid #ff0000;
     border-radius: 1vh;
   
-    margin: auto;
-    margin-top: 4vh;
+    margin: 4vh auto;
   
     font-size: 2.5vh;
     font-family: 'Poppins', sans-serif;
   
     padding: 2vh;
-    min-width: 3vh;
+    min-width: 30vh;
+    width: 40%;
   
     cursor: pointer;
     transition: 0.2s all;
   }
   
-  #skilldisclaimer-div button:hover {
+  #skillabout-div button:hover {
     transform: scale(1.05);
     background-color: #ff0000;
     color: white;

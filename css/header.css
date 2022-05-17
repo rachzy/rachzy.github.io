@@ -140,12 +140,8 @@ nav.menu ul.social-media a:hover {
   align-items: center;
   justify-content: center;
 
-  opacity: 0%;
-  transition: 0.6s all;
-}
-
-.top-left-wrapper.active {
-  opacity: 100%;
+  animation: fadeIn 0.6s ease-in-out;
+  transition: 0.2s all;
 }
 
 .top-left-wrapper p {
@@ -190,16 +186,12 @@ nav.menu ul.social-media a:hover {
   height: 40vh;
 
   font-size: 2.5vh;
-
-  margin-left: 150%;
   
   padding: 0px;
   box-shadow: 1vh 5vh 3vh 2vh #ff0000;
-  transition: 0.4s all;
-}
-
-.terminal.active {
-  margin-left: 0%;
+  
+  animation: fadeFromRight 0.6s ease-in-out;
+  transition: 0.2s all;
 }
 
 .fakeButtons {
