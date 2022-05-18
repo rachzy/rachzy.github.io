@@ -45,7 +45,7 @@ const skills: skills = [
         class: "",
         title: "TypeScript",
         innerHTML:
-          '<span class="iconify" style="font-size: 9vh" data-icon="cib:typescript"></span>',
+          '<span class="iconify" data-icon="cib:typescript"></span>',
         isHTML: true,
       },
       {
@@ -100,7 +100,7 @@ const skills: skills = [
         class: "",
         title: "VS Code",
         innerHTML:
-          '<span class="iconify" style="font-size: 9vh" data-icon="bxl:visual-studio"></span>',
+          '<span class="iconify" data-icon="bxl:visual-studio"></span>',
         isHTML: true,
       },
       {
@@ -112,7 +112,7 @@ const skills: skills = [
         class: "icon-shell",
         title: "Terminal",
         innerHTML:
-          '<span class="iconify" style="font-size: 9vh" data-icon="bi:terminal-fill"></span>',
+          '<span class="iconify" data-icon="bi:terminal-fill"></span>',
         isHTML: true,
       },
     ],
