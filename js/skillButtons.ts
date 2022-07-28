@@ -44,13 +44,17 @@ const skills: skills = [
       {
         class: "",
         title: "TypeScript",
-        innerHTML:
-          '<span class="iconify" data-icon="cib:typescript"></span>',
+        innerHTML: '<span class="iconify" data-icon="cib:typescript"></span>',
         isHTML: true,
       },
       {
         class: "fa-brands fa-react",
         title: "React",
+        isHTML: false,
+      },
+      {
+        class: "fa-brands fa-react",
+        title: "React Native",
         isHTML: false,
       },
     ],
@@ -72,6 +76,11 @@ const skills: skills = [
       {
         class: "fa-brands fa-php",
         title: "PHP",
+        isHTML: false,
+      },
+      {
+        class: "fa-brands fa-python",
+        title: "Python",
         isHTML: false,
       },
     ],
@@ -111,8 +120,7 @@ const skills: skills = [
       {
         class: "icon-shell",
         title: "Terminal",
-        innerHTML:
-          '<span class="iconify" data-icon="bi:terminal-fill"></span>',
+        innerHTML: '<span class="iconify" data-icon="bi:terminal-fill"></span>',
         isHTML: true,
       },
     ],
@@ -121,7 +129,7 @@ const skills: skills = [
 
 const openSkillButtons = (): void => {
   skillAboutDiv.classList.remove("active");
-  
+
   setTimeout(() => {
     skillAboutDiv.style.display = "none";
     skillAboutDiv.innerHTML = "";
@@ -132,7 +140,7 @@ const openSkillButtons = (): void => {
 
 const openSkillAbout = (): void => {
   skillButtonsDiv.classList.remove("active");
-  
+
   setTimeout(() => {
     skillButtonsDiv.style.display = "none";
     skillAboutDiv.style.display = "block";
