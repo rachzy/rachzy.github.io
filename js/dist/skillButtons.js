@@ -32,6 +32,11 @@ const skills = [
                 title: "React",
                 isHTML: false,
             },
+            {
+                class: "fa-brands fa-react",
+                title: "React Native",
+                isHTML: false,
+            },
         ],
     },
     {
@@ -51,6 +56,11 @@ const skills = [
             {
                 class: "fa-brands fa-php",
                 title: "PHP",
+                isHTML: false,
+            },
+            {
+                class: "fa-brands fa-python",
+                title: "Python",
                 isHTML: false,
             },
         ],
