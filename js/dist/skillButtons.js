@@ -49,11 +49,6 @@ const skills = [
                 isHTML: false,
             },
             {
-                class: "fa-solid fa-mug-hot",
-                title: "Express.JS",
-                isHTML: false,
-            },
-            {
                 class: "fa-brands fa-php",
                 title: "PHP",
                 isHTML: false,

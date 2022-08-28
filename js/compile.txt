@@ -1,6 +1,0 @@
---module amd
-projects.ts
-scrollController.ts
-skillButtons.ts
-terminalTyper.ts
-widgets.ts
