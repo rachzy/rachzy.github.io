@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "outDir": "js/dist"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
