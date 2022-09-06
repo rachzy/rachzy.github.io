@@ -3,6 +3,7 @@ import "./App.css";
 
 import BottomRightWrapper from "./Components/BottomRightWrapper/BottomRightWrapper";
 import Button from "./Components/Button/Button";
+import Contact from "./Components/Contact/Contact";
 import Header from "./Components/Header/Header";
 import LeftWrapper from "./Components/LeftWrapper/LeftWrapper";
 import Menu from "./Components/Menu/Menu";
@@ -16,7 +17,7 @@ import Skills from "./Components/Skills/Skills";
 import Terminal from "./Components/Terminal/Terminal";
 import TopLeftWrapper from "./Components/TopLeftWrapper/TopLeftWrapper";
 
-export interface IProject {
+export type project = {
   title: string;
   description: string;
   image: string;
@@ -24,23 +25,23 @@ export interface IProject {
   repositoryUrl: string;
 }
 
-
 function App() {
-  const projects: IProject[] = [
+  const projects: project[] = [
     {
       title: "Oncoffee",
-      description: "OnCoffee is an e-commerce marketplace that is focused on selling everything related to coffee, from simple coffee bags to coffee preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).",
+      description:
+        "OnCoffee is an e-commerce marketplace that is focused on selling everything related to coffee, from simple coffee bags to coffee preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).",
       image: "Oncoffee.png",
       repositoryUrl: "https://github.com/rachzy/oncoffee",
-      technologies: ["HTML", "CSS", "JavaScript", "React", "Node", "MySQL"]
-    }
-  ] 
+      technologies: ["HTML", "CSS", "JavaScript", "React", "Node", "MySQL"],
+    },
+  ];
 
   const renderProjects = (): JSX.Element[] => {
     return projects.map((project) => {
-      return <ProjectItem project={project} />
-    })
-  }
+      return <ProjectItem key={project.title} project={project} />;
+    });
+  };
 
   return (
     <Fragment>
@@ -52,7 +53,11 @@ function App() {
               <p>👋 Hello World, my name is</p>
               <h1>Henrique</h1>
               <h2>Web Developer</h2>
-              <a href="https://github.com/rachzy" target={"_blank"} rel="noreferrer">
+              <a
+                href="https://github.com/rachzy"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <Button>
                   <i className="fa-brands fa-github"></i> My GitHub
                 </Button>
@@ -76,6 +81,9 @@ function App() {
       </Section>
       <Section id="projects" title="Projects">
         {renderProjects()}
+      </Section>
+      <Section id="contact" title="Contact">
+        <Contact />
       </Section>
     </Fragment>
   );

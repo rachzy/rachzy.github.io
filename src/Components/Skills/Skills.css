@@ -1,176 +1,151 @@
 .skills-container {
-    display: flex;
-    margin: auto;
-  
-    align-items: center;
-    justify-content: center;
-  
-    padding: 2vh;
-    text-align: center;
-  
-    width: 90%;
-    min-height: 40vh;
-    max-height: fit-content;
-    color: #ff0000;
-  
-    border: 3px solid #ff0000;
-    border-radius: 2vh;
+  display: flex;
+  margin: auto;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 2vh;
+  text-align: center;
+
+  width: 90%;
+  min-height: 40vh;
+  max-height: fit-content;
+  color: #ff0000;
+
+  border: 3px solid #ff0000;
+  border-radius: 2vh;
+}
+
+#skillbuttons-div {
+  display: inline-block;
+  opacity: 0%;
+
+  transition: 0.2s all;
+}
+
+#skillbuttons-div.active {
+  opacity: 100%;
+}
+
+#skillbuttons-div i {
+  font-size: 15vh;
+}
+
+#skillbuttons-div p {
+  font-size: 5vh;
+}
+
+.skill-smallbutton {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #ff0000;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  padding: 3vh;
+  width: 20vh;
+  height: 25vh;
+
+  transition: 0.2s all;
+  overflow: hidden;
+}
+
+#skillabout-div {
+  opacity: 0%;
+  transition: 0.2s all;
+}
+
+#skillabout-div.active {
+  opacity: 100%;
+}
+
+#skillabout-div i,
+svg {
+  font-size: 10vh;
+}
+
+#skillabout-div svg {
+  height: 9vh;
+}
+
+#skillabout-div p {
+  font-size: 3vh;
+}
+
+#skillabout-div button {
+  display: block;
+
+  background: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 1vh;
+
+  margin: 4vh auto;
+
+  font-size: 2.5vh;
+  font-family: "Poppins", sans-serif;
+
+  padding: 2vh;
+  min-width: 30vh;
+  width: 40%;
+
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+#skillabout-div button:hover {
+  transform: scale(1.05);
+  background-color: #ff0000;
+  color: white;
+}
+
+.skill-smallbutton:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 820px) {
+  .skills-container {
+    width: 95%;
+    padding: 1vh;
   }
-  
-  #skillbuttons-div {
-    display: inline-block;
-    opacity: 0%;
-  
-    transition: 0.2s all;
-  }
-  
-  #skillbuttons-div.active {
-    opacity: 100%;
-  }
-  
-  #skillbuttons-div i {
-    font-size: 15vh;
-  }
-  
-  #skillbuttons-div p {
-    font-size: 5vh;
-  }
-  
+
   .skill-button {
-    display: inline-block;
-    flex-direction: column;
-    box-sizing: border-box;
-  
-    width: 30vh;
-  
-    align-items: center;
-    justify-content: center;
-  
-    margin: 20px 10px;
-    padding: 5vh 1vh;
-    border: 1px solid #ff0000;
-  
-    white-space: nowrap;
-    transition: 0.2s all;
-    cursor: pointer;
+    max-width: 16vh;
+    padding: 3vh 1vh;
   }
-  
-  .skill-button:hover {
-    transform: scale(1.05);
-    box-shadow: 1vh 0.3vh 3vh 1vh #ff0000;
+
+  #skillbuttons-div i {
+    font-size: 7vh;
   }
-  
+
+  #skillbuttons-div p {
+    font-size: 3vh;
+    font-weight: bold;
+  }
+
   .skill-smallbutton {
-    display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
-  
-    justify-content: center;
-    align-items: center;
-  
-    border: 1px solid #ff0000;
-    margin-left: 10px;
-    margin-top: 10px;
-  
-    padding: 3vh;
-    width: 20vh;
-    height: 25vh;
-  
-    transition: 0.2s all;
-    overflow: hidden;
+    width: 16vh;
+    height: 20vh;
+    padding: 1vh;
   }
-  
-  #skillabout-div {
-    opacity: 0%;
-    transition: 0.2s all;
-  }
-  
-  #skillabout-div.active {
-    opacity: 100%;
-  }
-  
+
   #skillabout-div i,
   svg {
-    font-size: 10vh;
+    font-size: 7vh;
   }
-  
+
   #skillabout-div svg {
-    height: 9vh;
+    height: 6vh;
   }
-  
+
   #skillabout-div p {
     font-size: 3vh;
+    font-weight: bold;
   }
-  
-  #skillabout-div button {
-    display: block;
-  
-    background: transparent;
-    color: #ff0000;
-    border: 1px solid #ff0000;
-    border-radius: 1vh;
-  
-    margin: 4vh auto;
-  
-    font-size: 2.5vh;
-    font-family: 'Poppins', sans-serif;
-  
-    padding: 2vh;
-    min-width: 30vh;
-    width: 40%;
-  
-    cursor: pointer;
-    transition: 0.2s all;
-  }
-  
-  #skillabout-div button:hover {
-    transform: scale(1.05);
-    background-color: #ff0000;
-    color: white;
-  }
-  
-  .skill-smallbutton:hover {
-    transform: scale(1.1);
-  }
-  
-  @media only screen and (max-width: 820px) {
-    .skills-container {
-      width: 95%;
-      padding: 1vh;
-    }
-  
-    .skill-button {
-      max-width: 16vh;
-      padding: 3vh 1vh;
-    }
-  
-    #skillbuttons-div i {
-      font-size: 7vh;
-    }
-  
-    #skillbuttons-div p {
-      font-size: 3vh;
-      font-weight: bold;
-    }
-  
-    .skill-smallbutton {
-      width: 16vh;
-      height: 20vh;
-      padding: 1vh;
-    }
-  
-    #skillabout-div i,
-    svg {
-      font-size: 7vh;
-    }
-  
-    #skillabout-div svg {
-      height: 6vh;
-    }
-  
-    #skillabout-div p {
-      font-size: 3vh;
-      font-weight: bold;
-    }
-  
-  }
+}

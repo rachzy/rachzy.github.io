@@ -1,13 +1,15 @@
 type widget = {
-  id: string,
-  title: string,
-  content: string
-}
+  id: string;
+  title: string;
+  content: string;
+};
 
-type widgets = widget[]
+type widgets = widget[];
 
 const widgetsContainer = document.querySelector(".widgets") as HTMLDivElement;
-const widgetsAboutDiv = document.querySelector(".widgets-about") as HTMLDivElement;
+const widgetsAboutDiv = document.querySelector(
+  ".widgets-about"
+) as HTMLDivElement;
 const AboutTitle = document.querySelector("#about-title") as HTMLTitleElement;
 const AboutContent = document.querySelector("#about-content") as HTMLDivElement;
 const widgets = document.querySelectorAll(".widget") as NodeList;
@@ -58,14 +60,14 @@ const widgetsResponse: widgets = [
 ];
 
 const displayWidgets = (): void => {
-    widgetsAboutDiv.style.display = "none";
-    widgetsContainer.style.display = "flex";
+  widgetsAboutDiv.style.display = "none";
+  widgetsContainer.style.display = "flex";
 };
 
 const displayWidgetsAbout = () => {
-    widgetsContainer.style.display = "none";
-    widgetsAboutDiv.style.display = "flex";
-    widgetsAboutDiv.classList.add("active");
+  widgetsContainer.style.display = "none";
+  widgetsAboutDiv.style.display = "flex";
+  widgetsAboutDiv.classList.add("active");
 };
 
 widgets.forEach((widget: Element) => {

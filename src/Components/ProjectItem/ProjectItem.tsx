@@ -1,7 +1,9 @@
-import {IProject} from "../../App";
+import { project } from "../../App";
+import Button from "../Button/Button";
+import "./ProjectItem.css";
 
 interface IProps {
-  project: IProject;
+  project: project;
 }
 
 const ProjectItem: React.FC<IProps> = ({ project }) => {
@@ -16,14 +18,17 @@ const ProjectItem: React.FC<IProps> = ({ project }) => {
           })}
         </div>
         <a href={project.repositoryUrl}>
-            <button>
+          <Button>
             PROJECT REPOSITORY{" "}
             <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
+          </Button>
         </a>
       </div>
       <div className="project-image">
-        <img src={require(`../../assets/${project.image}`)} alt={project.title} />
+        <img
+          src={require(`../../assets/${project.image}`)}
+          alt={project.title}
+        />
       </div>
     </div>
   );
