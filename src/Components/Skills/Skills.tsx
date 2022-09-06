@@ -4,21 +4,13 @@ import SkillItem from "../SkillItem/SkillItem";
 import Title from "../Title/Title";
 import "./Skills.css";
 
-type icons = {
-  class: string;
-  title: string;
-  isHTML: boolean;
-  innerHTML?: string;
-}[];
+import { skill } from "../../App";
 
-type skill = {
-  id: string;
-  title: string;
-  icons: icons;
-  mainIconClass: string;
-};
+interface IProps {
+  skills: skill[]
+}
 
-const Skills = () => {
+const Skills: React.FC<IProps> = ({skills}) => {
   const [skillScreenOpen, setSkillScreenOpen] = useState(false);
   const [currentSkillAbout, setCurrentSkillAbout] = useState<skill>();
 
@@ -48,112 +40,6 @@ const Skills = () => {
       skillButtonsDiv.current.classList.add("active");
     }, 200);
   });
-
-  const skills: skill[] = [
-    {
-      id: "frontend",
-      title: "Front-end",
-      icons: [
-        {
-          class: "fa-brands fa-html5",
-          title: "HTML",
-          isHTML: false,
-        },
-        {
-          class: "fa-brands fa-css3-alt",
-          title: "CSS",
-          isHTML: false,
-        },
-        {
-          class: "fa-brands fa-js",
-          title: "JavaScript",
-          isHTML: false,
-        },
-        {
-          class: "",
-          title: "TypeScript",
-          innerHTML: '<span class="iconify" data-icon="cib:typescript"></span>',
-          isHTML: true,
-        },
-        {
-          class: "fa-brands fa-react",
-          title: "React",
-          isHTML: false,
-        },
-        {
-          class: "fa-brands fa-react",
-          title: "React Native",
-          isHTML: false,
-        },
-      ],
-      mainIconClass: "fa-solid fa-code",
-    },
-    {
-      id: "backend",
-      title: "Back-end",
-      icons: [
-        {
-          class: "fa-brands fa-node-js",
-          title: "Node.JS",
-          isHTML: false,
-        },
-        {
-          class: "fa-brands fa-php",
-          title: "PHP",
-          isHTML: false,
-        },
-        {
-          class: "fa-brands fa-python",
-          title: "Python",
-          isHTML: false,
-        },
-      ],
-      mainIconClass: "fa-solid fa-server",
-    },
-    {
-      id: "databases",
-      title: "Databases",
-      icons: [
-        {
-          class: "icon-mysql",
-          title: "MySQL",
-          isHTML: false,
-        },
-        {
-          class: "icon-mongodb",
-          title: "MongoDB",
-          isHTML: false,
-        },
-      ],
-      mainIconClass: "fa-solid fa-database",
-    },
-    {
-      id: "tools",
-      title: "Tools",
-      icons: [
-        {
-          class: "",
-          title: "VS Code",
-          innerHTML:
-            '<span class="iconify" data-icon="bxl:visual-studio"></span>',
-          isHTML: true,
-        },
-        {
-          class: "fa-brands fa-git-alt",
-          title: "Git",
-          isHTML: false,
-        },
-        {
-          class: "icon-shell",
-          title: "Terminal",
-          innerHTML:
-            '<span class="iconify" data-icon="bi:terminal-fill"></span>',
-          isHTML: true,
-        },
-      ],
-      mainIconClass: "fa-solid fa-screwdriver-wrench",
-    },
-  ];
 
   const handleSkillButtonClick = (skillId: string) => {
     const getSkill = skills.filter((skill) => skill.id === skillId)[0];

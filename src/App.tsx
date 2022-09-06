@@ -4,12 +4,13 @@ import "./App.css";
 import BottomRightWrapper from "./Components/BottomRightWrapper/BottomRightWrapper";
 import Button from "./Components/Button/Button";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import LeftWrapper from "./Components/LeftWrapper/LeftWrapper";
 import Menu from "./Components/Menu/Menu";
 import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
 import PersonalWidgets from "./Components/PersonalWidgets/PersonalWidgets";
-import ProjectItem from "./Components/ProjectItem/ProjectItem";
+import Projects from "./Components/Projects/Projects";
 import RightWrapper from "./Components/RightWrapper/RightWrapper";
 import Section from "./Components/Section/Section";
 import Separator from "./Components/Separator/Separator";
@@ -17,31 +18,162 @@ import Skills from "./Components/Skills/Skills";
 import Terminal from "./Components/Terminal/Terminal";
 import TopLeftWrapper from "./Components/TopLeftWrapper/TopLeftWrapper";
 
+export type skill = {
+  id: string;
+  title: string;
+  icons: {
+    class: string;
+    title: string;
+    isHTML: boolean;
+    innerHTML?: string;
+  }[];
+  mainIconClass: string;
+};
+
 export type project = {
   title: string;
   description: string;
   image: string;
-  technologies: string[];
+  tags: string[];
   repositoryUrl: string;
-}
+};
 
 function App() {
-  const projects: project[] = [
+  const skills: skill[] = [
     {
-      title: "Oncoffee",
-      description:
-        "OnCoffee is an e-commerce marketplace that is focused on selling everything related to coffee, from simple coffee bags to coffee preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).",
-      image: "Oncoffee.png",
-      repositoryUrl: "https://github.com/rachzy/oncoffee",
-      technologies: ["HTML", "CSS", "JavaScript", "React", "Node", "MySQL"],
+      id: "frontend",
+      title: "Front-end",
+      icons: [
+        {
+          class: "fa-brands fa-html5",
+          title: "HTML",
+          isHTML: false,
+        },
+        {
+          class: "fa-brands fa-css3-alt",
+          title: "CSS",
+          isHTML: false,
+        },
+        {
+          class: "fa-brands fa-js",
+          title: "JavaScript",
+          isHTML: false,
+        },
+        {
+          class: "",
+          title: "TypeScript",
+          innerHTML: '<span class="iconify" data-icon="cib:typescript"></span>',
+          isHTML: true,
+        },
+        {
+          class: "fa-brands fa-react",
+          title: "React",
+          isHTML: false,
+        },
+        {
+          class: "fa-brands fa-react",
+          title: "React Native",
+          isHTML: false,
+        },
+      ],
+      mainIconClass: "fa-solid fa-code",
+    },
+    {
+      id: "backend",
+      title: "Back-end",
+      icons: [
+        {
+          class: "fa-brands fa-node-js",
+          title: "Node.JS",
+          isHTML: false,
+        },
+        {
+          class: "fa-brands fa-php",
+          title: "PHP",
+          isHTML: false,
+        },
+        {
+          class: "fa-brands fa-python",
+          title: "Python",
+          isHTML: false,
+        },
+      ],
+      mainIconClass: "fa-solid fa-server",
+    },
+    {
+      id: "databases",
+      title: "Databases",
+      icons: [
+        {
+          class: "icon-mysql",
+          title: "MySQL",
+          isHTML: false,
+        },
+        {
+          class: "icon-mongodb",
+          title: "MongoDB",
+          isHTML: false,
+        },
+      ],
+      mainIconClass: "fa-solid fa-database",
+    },
+    {
+      id: "tools",
+      title: "Tools",
+      icons: [
+        {
+          class: "",
+          title: "VS Code",
+          innerHTML:
+            '<span class="iconify" data-icon="bxl:visual-studio"></span>',
+          isHTML: true,
+        },
+        {
+          class: "fa-brands fa-git-alt",
+          title: "Git",
+          isHTML: false,
+        },
+        {
+          class: "icon-shell",
+          title: "Terminal",
+          innerHTML:
+            '<span class="iconify" data-icon="bi:terminal-fill"></span>',
+          isHTML: true,
+        },
+      ],
+      mainIconClass: "fa-solid fa-screwdriver-wrench",
     },
   ];
 
-  const renderProjects = (): JSX.Element[] => {
-    return projects.map((project) => {
-      return <ProjectItem key={project.title} project={project} />;
-    });
-  };
+  const projects: project[] = [
+    {
+      title: "Oncoffee",
+      description: `OnCoffee is an e-commerce marketplace that is focused on selling
+          everything related to coffee, from simple coffee bags to coffee
+          preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).`,
+      image: "Oncoffee.png",
+      tags: ["HTML", "CSS", "JavaScript", "React", "Node", "MySQL"],
+      repositoryUrl: "https://github.com/rachzy/oncoffee",
+    },
+    {
+      title: "Fastalk",
+      description: `Fastalk was a Fast-Chat by Rooms website with video-calls that I loved developing. 
+        It got many users, but I shutted it down because I had no investment to keep it online.
+        It was developed using PHP and JavaScript`,
+      image: "Fastalk.png",
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      repositoryUrl: "https://github.com/rachzy/fastalk",
+    },
+    {
+      title: "TS Chat",
+      description: `A fast-chat system coded on Typescript. 
+        I created this project with the only intention of practicing my Typescript skills. It's being developed using
+        React + Typescript, NodeJS and Websockets`,
+      image: "TSChat.png",
+      tags: ["HTML", "CSS", "TypeScript", "React", "Node", "MongoDB"],
+      repositoryUrl: "https://github.com/rachzy/tschat",
+    },
+  ];
 
   return (
     <Fragment>
@@ -77,14 +209,15 @@ function App() {
         <PersonalWidgets />
       </Section>
       <Section id="skills" title="Skills">
-        <Skills />
+        <Skills skills={skills} />
       </Section>
-      <Section id="projects" title="Projects">
-        {renderProjects()}
+      <Section id="projects" title="Projects" column={true}>
+        <Projects projects={projects} />
       </Section>
       <Section id="contact" title="Contact">
         <Contact />
       </Section>
+      <Footer />
     </Fragment>
   );
 }

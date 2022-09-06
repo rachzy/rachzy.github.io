@@ -1,5 +1,6 @@
 import { project } from "../../App";
 import Button from "../Button/Button";
+import Title from "../Title/Title";
 import "./ProjectItem.css";
 
 interface IProps {
@@ -10,11 +11,11 @@ const ProjectItem: React.FC<IProps> = ({ project }) => {
   return (
     <div className="project">
       <div className="project-description">
-        <h1>{project.title}</h1>
+        <Title>{project.title}</Title>
         <p>{project.description}</p>
         <div className="project-tags">
-          {project.technologies.map((technology) => {
-            return <span key={technology}>{technology}</span>;
+          {project.tags.map((tag) => {
+            return <span key={tag}>{tag}</span>;
           })}
         </div>
         <a href={project.repositoryUrl}>
@@ -25,7 +26,7 @@ const ProjectItem: React.FC<IProps> = ({ project }) => {
         </a>
       </div>
       <div className="project-image">
-        <img
+        <img  
           src={require(`../../assets/${project.image}`)}
           alt={project.title}
         />
