@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f30;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(243, 234, 234);
+  border-radius: 2.5vh;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeFromRight {
+  0% {
+    margin-left: 150%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}

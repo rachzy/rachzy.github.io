@@ -1,0 +1,40 @@
+.widgets-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  min-height: 45vh;
+
+  padding: 5px;
+
+  border-radius: 2vh;
+  box-shadow: 1px 1px 10px 3px #ff0000;
+}
+
+.widgets-container h1 {
+  line-height: 1vh;
+}
+
+.widgets-container div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  animation: fadeIn 0.2s ease-in-out;
+  transition: 0.2s all;
+}
+
+@media only screen and (max-width: 820px) {
+  .personal-widgets {
+    width: 100%;
+  }
+}
