@@ -26,10 +26,13 @@ const ProjectItem: React.FC<IProps> = ({ project }) => {
         </a>
       </div>
       <div className="project-image">
-        <img
-          src={require(`../../assets/${project.image}`)}
-          alt={project.title}
-        />
+        {project.images.map((image) => {
+          return (
+            <div>
+              <img src={require(`../../assets/${image}`)} alt={project.title} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
