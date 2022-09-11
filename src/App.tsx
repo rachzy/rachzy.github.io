@@ -23,6 +23,7 @@ export type skill = {
   title: string;
   icons: {
     class: string;
+    color: string;
     title: string;
     isHTML: boolean;
     innerHTML?: string;
@@ -46,41 +47,48 @@ function App() {
       icons: [
         {
           class: "fa-brands fa-html5",
+          color: "#e34c26",
           title: "HTML",
           isHTML: false,
         },
         {
           class: "fa-brands fa-css3-alt",
+          color: "#264de4",
           title: "CSS",
           isHTML: false,
         },
         {
           class: "fa-brands fa-js",
+          color: "#F0DB4F",
           title: "JavaScript",
           isHTML: false,
         },
         {
           class: "",
+          color: "#007acc",
           title: "TypeScript",
           innerHTML: '<span class="iconify" data-icon="cib:typescript"></span>',
           isHTML: true,
         },
         {
           class: "fa-brands fa-react",
+          color: "#61DBFB",
           title: "React.JS",
           isHTML: false,
         },
         {
+          class: "fa-brands fa-react",
+          color: "#61DBFB",
+          title: "React Native",
+          isHTML: false,
+        },
+        {
           class: "",
+          color: "white",
           title: "Next.JS",
           innerHTML:
             '<span class="iconify" data-icon="akar-icons:nextjs-fill"></span>',
           isHTML: true,
-        },
-        {
-          class: "fa-brands fa-react",
-          title: "React Native",
-          isHTML: false,
         },
       ],
       mainIconClass: "fa-solid fa-code",
@@ -91,16 +99,19 @@ function App() {
       icons: [
         {
           class: "fa-brands fa-node-js",
+          color: "#68A063",
           title: "Node.JS",
           isHTML: false,
         },
         {
           class: "fa-brands fa-php",
+          color: "#8993be",
           title: "PHP",
           isHTML: false,
         },
         {
           class: "fa-brands fa-python",
+          color: "#FFE873",
           title: "Python Flask",
           isHTML: false,
         },
@@ -113,11 +124,13 @@ function App() {
       icons: [
         {
           class: "icon-mysql",
+          color: "#00758f",
           title: "MySQL",
           isHTML: false,
         },
         {
           class: "icon-mongodb",
+          color: "#4DB33D",
           title: "MongoDB",
           isHTML: false,
         },
@@ -131,17 +144,20 @@ function App() {
         {
           class: "",
           title: "VS Code",
+          color: "#0078d7",
           innerHTML:
             '<span class="iconify" data-icon="bxl:visual-studio"></span>',
           isHTML: true,
         },
         {
           class: "fa-brands fa-git-alt",
+          color: "#F1502F",
           title: "Git",
           isHTML: false,
         },
         {
           class: "icon-shell",
+          color: "gray",
           title: "Terminal",
           innerHTML:
             '<span class="iconify" data-icon="bi:terminal-fill"></span>',

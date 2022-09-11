@@ -7,10 +7,10 @@ import "./Skills.css";
 import { skill } from "../../App";
 
 interface IProps {
-  skills: skill[]
+  skills: skill[];
 }
 
-const Skills: React.FC<IProps> = ({skills}) => {
+const Skills: React.FC<IProps> = ({ skills }) => {
   const [skillScreenOpen, setSkillScreenOpen] = useState(false);
   const [currentSkillAbout, setCurrentSkillAbout] = useState<skill>();
 
@@ -77,6 +77,7 @@ const Skills: React.FC<IProps> = ({skills}) => {
             <SkillItem
               key={icon.title}
               iconClass={icon.class}
+              color={icon.color}
               innerHTML={icon.innerHTML || ""}
               isHTML={icon.isHTML}
             >
