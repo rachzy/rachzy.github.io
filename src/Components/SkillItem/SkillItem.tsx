@@ -1,5 +1,6 @@
 interface IProps {
   iconClass: string;
+  color: string;
   isHTML: boolean;
   innerHTML: string;
   children: string;
@@ -7,18 +8,22 @@ interface IProps {
 
 const SkillItem: React.FC<IProps> = ({
   isHTML,
+  color,
   iconClass,
   innerHTML,
   children,
 }) => {
   return (
-    <div className="skill-smallbutton">
+    <div className="skill-smallbutton" style={{ borderColor: color }}>
       {isHTML ? (
-        <div dangerouslySetInnerHTML={{ __html: innerHTML }}></div>
+        <div
+          style={{ color: color }}
+          dangerouslySetInnerHTML={{ __html: innerHTML }}
+        ></div>
       ) : (
-        <i className={iconClass} />
+        <i style={{ color: color }} className={iconClass} />
       )}
-      <p>{children}</p>
+      <p style={{ color: color }}>{children}</p>
     </div>
   );
 };
