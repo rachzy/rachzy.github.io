@@ -67,8 +67,15 @@ function App() {
         },
         {
           class: "fa-brands fa-react",
-          title: "React",
+          title: "React.JS",
           isHTML: false,
+        },
+        {
+          class: "",
+          title: "Next.JS",
+          innerHTML:
+            '<span class="iconify" data-icon="akar-icons:nextjs-fill"></span>',
+          isHTML: true,
         },
         {
           class: "fa-brands fa-react",
@@ -94,7 +101,7 @@ function App() {
         },
         {
           class: "fa-brands fa-python",
-          title: "Python",
+          title: "Python Flask",
           isHTML: false,
         },
       ],
