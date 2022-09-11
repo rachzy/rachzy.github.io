@@ -18,7 +18,7 @@ const ProjectItem: React.FC<IProps> = ({ project }) => {
             return <span key={tag}>{tag}</span>;
           })}
         </div>
-        <a href={project.repositoryUrl}>
+        <a href={project.repositoryUrl} target="_blank" rel="noreferrer">
           <Button>
             PROJECT REPOSITORY{" "}
             <i className="fa-solid fa-arrow-up-right-from-square"></i>
@@ -26,7 +26,7 @@ const ProjectItem: React.FC<IProps> = ({ project }) => {
         </a>
       </div>
       <div className="project-image">
-        <img  
+        <img
           src={require(`../../assets/${project.image}`)}
           alt={project.title}
         />

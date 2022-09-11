@@ -165,13 +165,18 @@ function App() {
       repositoryUrl: "https://github.com/rachzy/fastalk",
     },
     {
-      title: "TS Chat",
-      description: `A fast-chat system coded on Typescript. 
-        I created this project with the only intention of practicing my Typescript skills. It's being developed using
-        React + Typescript, NodeJS and Websockets`,
-      image: "TSChat.png",
-      tags: ["HTML", "CSS", "TypeScript", "React", "Node", "MongoDB"],
-      repositoryUrl: "https://github.com/rachzy/tschat",
+      title: "Space Invaders",
+      description: `A game that I developed to learn more about pygame and train my python skills`,
+      image: "SpaceInvaders.png",
+      tags: ["Python"],
+      repositoryUrl: "https://github.com/rachzy/space-invaders",
+    },
+    {
+      title: "Feather",
+      description: `A mobile app designed to remotely control a fictional hoverboard`,
+      image: "Feather-1.png",
+      tags: ["React Native", "Typescript"],
+      repositoryUrl: "https://github.com/rachzy/feather",
     },
   ];
 
