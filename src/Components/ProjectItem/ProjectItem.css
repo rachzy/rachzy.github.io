@@ -26,8 +26,8 @@
 
   font-size: 2.8vh;
   font-weight: 300;
-  
-  text-align: justify;
+
+  text-align: center;
 
   padding: 10px;
 }
@@ -53,6 +53,7 @@
   border-radius: 1.5vh;
 
   color: white;
+  max-width: 90%;
 
   font-size: 2.5vh;
   letter-spacing: 2px;
@@ -62,16 +63,24 @@
 
 .project-image {
   width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image div {
+  display: inline-block;
+  flex-grow: 1;
+  margin: 1vh;
 }
 
 .project-image img {
-  width: 90vh;
+  width: 100%;
 
   border: 1px solid #ff0000;
   border-radius: 1.5vh;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 820px) {
   .project {
     flex-direction: column;
 
@@ -85,9 +94,17 @@
     width: 100%;
   }
   .project-image {
+    display: flex;
     width: 100%;
     margin-top: 30px;
   }
+
+  .project-image div {
+    display: inline-block;
+    flex-grow: 1;
+    margin: 0.5vh;
+  }
+
   .project-image img {
     width: 100%;
   }

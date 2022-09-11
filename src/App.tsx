@@ -33,7 +33,7 @@ export type skill = {
 export type project = {
   title: string;
   description: string;
-  image: string;
+  images: string[];
   tags: string[];
   repositoryUrl: string;
 };
@@ -151,7 +151,7 @@ function App() {
       description: `OnCoffee is an e-commerce marketplace that is focused on selling
           everything related to coffee, from simple coffee bags to coffee
           preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).`,
-      image: "Oncoffee.png",
+      images: ["Oncoffee.png"],
       tags: ["HTML", "CSS", "JavaScript", "React", "Node", "MySQL"],
       repositoryUrl: "https://github.com/rachzy/oncoffee",
     },
@@ -160,18 +160,23 @@ function App() {
       description: `Fastalk was a Fast-Chat by Rooms website with video-calls that I loved developing. 
         It got many users, but I shutted it down because I had no investment to keep it online.
         It was developed using PHP and JavaScript`,
-      image: "Fastalk.png",
+      images: ["Fastalk.png"],
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       repositoryUrl: "https://github.com/rachzy/fastalk",
     },
     {
-      title: "TS Chat",
-      description: `A fast-chat system coded on Typescript. 
-        I created this project with the only intention of practicing my Typescript skills. It's being developed using
-        React + Typescript, NodeJS and Websockets`,
-      image: "TSChat.png",
-      tags: ["HTML", "CSS", "TypeScript", "React", "Node", "MongoDB"],
-      repositoryUrl: "https://github.com/rachzy/tschat",
+      title: "Space Invaders",
+      description: `A game that I developed to learn more about pygame and train my python skills`,
+      images: ["SpaceInvaders.png"],
+      tags: ["Python"],
+      repositoryUrl: "https://github.com/rachzy/space-invaders",
+    },
+    {
+      title: "Feather",
+      description: `A mobile app designed to remotely control a fictional hoverboard`,
+      images: ["Feather-1.png", "Feather-2.png"],
+      tags: ["React Native", "Typescript"],
+      repositoryUrl: "https://github.com/rachzy/feather",
     },
   ];
 
