@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cdd7d36.css",
-    "main.js": "/static/js/main.7c969130.js",
+    "main.css": "/static/css/main.9d654888.css",
+    "main.js": "/static/js/main.320b2187.js",
     "static/media/me.jpg": "/static/media/me.22bf3bbd32adabce7942.jpg",
-    "static/media/Oncoffee copy.png": "/static/media/Oncoffee copy.9b2e44cf5d4e5fa6eb04.png",
     "static/media/Oncoffee.png": "/static/media/Oncoffee.9b2e44cf5d4e5fa6eb04.png",
+    "static/media/SpaceInvaders.png": "/static/media/SpaceInvaders.28dc71142f8b69802be8.png",
     "static/media/Fastalk.png": "/static/media/Fastalk.e672c27017d4148887d1.png",
     "static/media/fox copy.jpg": "/static/media/fox copy.957160c2f887be58ccc1.jpg",
     "static/media/fox.jpg": "/static/media/fox.957160c2f887be58ccc1.jpg",
     "static/media/TSChat.png": "/static/media/TSChat.077e2fec2fe78d85d541.png",
     "index.html": "/index.html",
-    "main.3cdd7d36.css.map": "/static/css/main.3cdd7d36.css.map",
-    "main.7c969130.js.map": "/static/js/main.7c969130.js.map"
+    "main.9d654888.css.map": "/static/css/main.9d654888.css.map",
+    "main.320b2187.js.map": "/static/js/main.320b2187.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cdd7d36.css",
-    "static/js/main.7c969130.js"
+    "static/css/main.9d654888.css",
+    "static/js/main.320b2187.js"
   ]
 }
