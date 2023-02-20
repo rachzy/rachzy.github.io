@@ -40,11 +40,9 @@ const PersonalWidgets = () => {
       content: `
       <b>Name:</b> Henrique Ferreira <br>
       <b>Birthday:</b> February, 25th <br>
-      <b>Age:</b> 16 years old <br>
-      <b>Gender:</b> Boy (He/Him) <br>
-      <b>Lives in:</b> Minas Gerais, Brazil <br>
+      <b>Gender:</b> Male (He/Him) <br>
+      <b>Location:</b> Minas Gerais, Brazil <br>
       <b>Occupation:</b> Student <br>
-      <b>Job experience:</b> None
       `,
     },
     {
@@ -77,7 +75,7 @@ const PersonalWidgets = () => {
       Patrocitizens (Unfinished), which was supposed to be a social media for my city. I made it on PHP only.
       In the end of 2020, I started the development of a project called Fastalk, which was a fast-chat with rooms.
       I made it with PHP and some JavaScript in some parts. After ending that project, I started another one some 
-      months later with my friend, called OnCoffee, that I'm currently developing using ReactJS and NodeJS.`,
+      months later with my friend, called OnCoffee, that I was developing using ReactJS and NodeJS.`,
     },
   ];
 
@@ -110,8 +108,14 @@ const PersonalWidgets = () => {
     <div className="personal-widgets">
       <Title>{"> More"}</Title>
       <div className="widgets-container">
-        <div className="widgets" ref={widgetsDiv}>{returnWidgetButtons()}</div>
-        <div className="widgets-about" ref={widgetsAbout} style={{ display: "none" }}>
+        <div className="widgets" ref={widgetsDiv}>
+          {returnWidgetButtons()}
+        </div>
+        <div
+          className="widgets-about"
+          ref={widgetsAbout}
+          style={{ display: "none" }}
+        >
           <Title>{currentWidget ? currentWidget.title : ""}</Title>
           <p
             id="about-content"
