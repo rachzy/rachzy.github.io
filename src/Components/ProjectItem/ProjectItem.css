@@ -1,5 +1,6 @@
 .project {
   display: flex;
+  flex-direction: column;
 
   background-color: rgba(90, 88, 88, 0.1);
   border-radius: 2vh;
@@ -8,36 +9,69 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 90%;
-  margin-top: 10vh;
+  margin: 5vh;
+
+  width: 40vh;
+  height: 40vh;
+
+  border: 2px #ff0000 solid;
+}
+
+.project div {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.project img.thumbnail {
+  width: 13vh;
+  border-radius: 50%;
+  background-color: #00001a;
+  border: 2px solid red;
+
+  margin-top: -8vh;
 }
 
 /* PROJECT DESCRIPTION */
 
-.project-description {
-  width: 50%;
-}
-
-.project-description p {
-  background-color: rgba(78, 76, 76, 0.4);
-
-  border: 1px solid white;
-  border-radius: 1.5vh;
-
-  font-size: 2.8vh;
+.project p.brief-description {
+  font-size: 2.5vh;
   font-weight: 300;
 
   text-align: center;
-
-  padding: 10px;
+  margin-top: -20px;
 }
+
+/* PROJECT DETAILS-BUTTON */
+
+button.project-button {
+  width: 90%;
+  background-color: #ff0000;
+  padding: 1.5vh;
+  border: none;
+  border-radius: 5vh;
+  color: white;
+  letter-spacing: 0.5vh;
+
+  cursor: pointer;
+  transition: 0.2s all;
+
+  font-weight: bold;
+}
+
+button.project-button:hover {
+  transform: scale(1.05);
+}
+
+/* PROJECT TAGS */
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .project-tags span {

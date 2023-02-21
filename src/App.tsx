@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import "./App.css";
 
 import BottomRightWrapper from "./Components/BottomRightWrapper/BottomRightWrapper";
@@ -17,6 +17,7 @@ import Separator from "./Components/Separator/Separator";
 import Skills from "./Components/Skills/Skills";
 import Terminal from "./Components/Terminal/Terminal";
 import TopLeftWrapper from "./Components/TopLeftWrapper/TopLeftWrapper";
+import Modal from "./Modal";
 
 export type skill = {
   id: string;
@@ -33,13 +34,35 @@ export type skill = {
 
 export type project = {
   title: string;
+  briefDescription: string;
   description: string;
-  images: string[];
+  thumbnail: string;
+  banner: string;
   tags: string[];
-  repositoryUrl: string;
+  repositoryUrl?: string;
+};
+
+export type modal = {
+  title: string;
+  description: string;
+  image: string;
+  tags?: string[];
+  button?: {
+    title: string;
+    color?: string;
+    url: string;
+  };
+  enabled: boolean;
 };
 
 function App() {
+  const [modal, setModal] = useState<modal>({
+    title: "",
+    description: "",
+    image: "",
+    enabled: false,
+  });
+
   const skills: skill[] = [
     {
       id: "frontend",
@@ -193,41 +216,71 @@ function App() {
 
   const projects: project[] = [
     {
+      title: "Rede Sweden",
+      briefDescription:
+        "A Brazilian Complete Minecraft server focused on RankUP (redesweden.com)",
+      description: `Sweden Network is a minecraft server that I created from 
+      scratch with my friend Augusto. It took my entire summer vacations and 
+      a full spigot course to make it, but I got awesome results, and it's my 
+      favorite project so far. It got more than 100 players online simultaneously,
+      and it currently has hundreds of members on its Discord. I sold the project
+      since I didn't have enough time to focus on it and for other personal reasons.
+      The server is still online, and you can access it through the IP: redesweden.com`,
+      thumbnail: "sweden-thumbnail.png",
+      banner: "sweden-banner.png",
+      tags: ["Java", "MySQL"],
+      repositoryUrl: "https://discord.io/redesweden",
+    },
+    {
       title: "Oncoffee",
+      briefDescription:
+        "An e-commerce marketplace focused on selling anything related to coffee",
       description: `OnCoffee is an e-commerce marketplace that is focused on selling
           everything related to coffee, from simple coffee bags to coffee
           preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).`,
-      images: ["Oncoffee.png"],
-      tags: ["HTML", "CSS", "JavaScript", "React", "Node", "MySQL"],
+      thumbnail: "oncoffee-thumbnail.png",
+      banner: "oncoffee-banner.png",
+      tags: ["HTML", "CSS", "JavaScript", "React", "Node", "MongoDB"],
       repositoryUrl: "https://github.com/rachzy/oncoffee",
     },
     {
       title: "Fastalk",
+      briefDescription:
+        "A chat room web application with video-calls, which you even join in public rooms",
       description: `Fastalk was a Fast-Chat by Rooms website with video-calls that I loved developing. 
         It got many users, but I shutted it down because I had no investment to keep it online.
         It was developed using PHP and JavaScript`,
-      images: ["Fastalk.png"],
+      thumbnail: "fastalk-thumbnail.png",
+      banner: "fastalk-banner.png",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       repositoryUrl: "https://github.com/rachzy/fastalk",
     },
     {
-      title: "Space Invaders",
-      description: `A game that I developed to learn more about pygame and train my python skills`,
-      images: ["SpaceInvaders.png"],
-      tags: ["Python"],
-      repositoryUrl: "https://github.com/rachzy/space-invaders",
+      title: "Animeasy",
+      briefDescription: "A mobile application to easily watch animes.",
+      description: `Animeasy is a "far from finished" project that I was developing just for fun 
+      to help users to watch, see infos and share any anime that they want easily, for free and
+      wherever they want (It's not released, please don't sue me TV Tokyo). It has a really cool
+      design, even tho it's not finished yet.`,
+      thumbnail: "animeasy-thumbnail.png",
+      banner: "animeasy-thumbnail.png",
+      tags: ["React Native", "Typescript"],
+      repositoryUrl: "https://github.com/rachzy/animeasy",
     },
     {
-      title: "Feather",
-      description: `A mobile app designed to remotely control a fictional hoverboard`,
-      images: ["Feather-1.png", "Feather-2.png"],
-      tags: ["React Native", "Typescript"],
-      repositoryUrl: "https://github.com/rachzy/feather",
+      title: "Space Invaders",
+      briefDescription: "The classic space invaders game!",
+      description: `A game that I developed to learn more about pygame and train my python skills.`,
+      thumbnail: "spaceinvaders-thumbnail.png",
+      banner: "spaceinvaders-banner.png",
+      tags: ["Python"],
+      repositoryUrl: "https://github.com/rachzy/space-invaders-game",
     },
   ];
 
   return (
     <Fragment>
+      <Modal modal={modal} setModal={setModal} />
       <Header>
         <Menu />
         <LeftWrapper>
@@ -262,8 +315,8 @@ function App() {
       <Section id="skills" title="Skills">
         <Skills skills={skills} />
       </Section>
-      <Section id="projects" title="Projects" column={true}>
-        <Projects projects={projects} />
+      <Section id="projects" title="Projects" center={true}>
+        <Projects projects={projects} setModal={setModal} />
       </Section>
       <Section id="contact" title="Contact">
         <Contact />
