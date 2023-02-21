@@ -5,21 +5,22 @@ const Terminal = () => {
   const [commandLineText, setCommandLineText] = useState("");
   const [outputLineText, setOutputLineText] = useState("");
 
-  const commandLineValue = 'console.log("Keep it Mello!");';
-  const outputLineValue = '> "Keep it Mello!"';
+  const commandLineValue =
+    'console.log("Hello, " + username + ", I am a great developer!");';
+  const outputLineValue = '> "Hello, undefined, I am a great developer!"';
 
   useEffect(() => {
-    if(commandLineText.length >= commandLineValue.length) {
+    if (commandLineText.length >= commandLineValue.length) {
       setTimeout(() => {
         setOutputLineText(outputLineValue);
       }, 1000);
       return;
     }
 
-    let nextLetter = commandLineValue.split('')[commandLineText.length]
+    let nextLetter = commandLineValue.split("")[commandLineText.length];
     setTimeout(() => {
       setCommandLineText((currentValue) => `${currentValue}${nextLetter}`);
-    }, 100)
+    }, 100);
   }, [commandLineText]);
   return (
     <div className="terminal">

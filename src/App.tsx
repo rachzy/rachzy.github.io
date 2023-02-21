@@ -77,10 +77,12 @@ function App() {
           isHTML: false,
         },
         {
-          class: "fa-brands fa-react",
+          class: "",
           color: "#61DBFB",
           title: "React Native",
-          isHTML: false,
+          innerHTML:
+            '<span class="iconify" data-icon="tabler:brand-react-native"></span>',
+          isHTML: true,
         },
         {
           class: "",
@@ -112,7 +114,13 @@ function App() {
         {
           class: "fa-brands fa-python",
           color: "#FFE873",
-          title: "Python Flask",
+          title: "Python",
+          isHTML: false,
+        },
+        {
+          class: "fa-brands fa-java",
+          color: "#f89820",
+          title: "Java",
           isHTML: false,
         },
       ],
@@ -150,10 +158,25 @@ function App() {
           isHTML: true,
         },
         {
+          class: "",
+          title: "IntelliJ IDEA",
+          color: "#6B57FF",
+          innerHTML:
+            '<span class="iconify" data-icon="logos:intellij-idea"></span>',
+          isHTML: true,
+        },
+        {
           class: "fa-brands fa-git-alt",
           color: "#F1502F",
           title: "Git",
           isHTML: false,
+        },
+        {
+          class: "",
+          color: "#F48120",
+          title: "Cloudflare",
+          innerHTML: '<span class="iconify" data-icon="cib:cloudflare"></span>',
+          isHTML: true,
         },
         {
           class: "icon-shell",
@@ -212,7 +235,7 @@ function App() {
             <div className="greeting">
               <p>👋 Hello World, my name is</p>
               <h1>Henrique</h1>
-              <h2>Web Developer</h2>
+              <h2>Software Developer</h2>
               <a
                 href="https://github.com/rachzy"
                 target={"_blank"}

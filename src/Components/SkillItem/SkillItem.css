@@ -1,0 +1,60 @@
+.skill-smallbutton {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid;
+  margin-left: 5vh;
+  margin-top: 3vh;
+
+  padding: 5vh;
+  width: 5vw;
+  height: 20vh;
+
+  transition: 0.2s all;
+}
+
+.skill-smallbutton:hover {
+  transform: scale(1.1);
+}
+
+.skill-smallbutton i {
+  font-size: 10vh;
+}
+
+.skill-smallbutton div {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+.skill-smallbutton svg {
+  font-size: 10vh;
+}
+
+@media only screen and (max-width: 820px) {
+  .skill-smallbutton {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 10vh;
+    height: 25vh;
+    padding: 1vh 4vh;
+  }
+
+  .skill-smallbutton i {
+    font-size: 7vh;
+  }
+
+  .skill-smallbutton svg {
+    font-size: 7vh;
+  }
+
+  .skill-smallbutton p {
+    font-size: 3vh;
+  }
+}

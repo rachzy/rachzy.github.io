@@ -1,3 +1,5 @@
+import "./SkillItem.css";
+
 interface IProps {
   iconClass: string;
   color: string;
@@ -14,7 +16,10 @@ const SkillItem: React.FC<IProps> = ({
   children,
 }) => {
   return (
-    <div className="skill-smallbutton" style={{ borderColor: color }}>
+    <div
+      className="skill-smallbutton"
+      style={{ borderColor: color, boxShadow: `5px 1px 3vw ${color}` }}
+    >
       {isHTML ? (
         <div
           style={{ color: color }}
@@ -23,7 +28,9 @@ const SkillItem: React.FC<IProps> = ({
       ) : (
         <i style={{ color: color }} className={iconClass} />
       )}
-      <p style={{ color: color }}>{children}</p>
+      <p style={{ color: color }}>
+        <strong>{children}</strong>
+      </p>
     </div>
   );
 };
