@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.feb92d2a.css",
-    "main.js": "/static/js/main.fa24c447.js",
+    "main.js": "/static/js/main.594264fe.js",
     "static/media/sweden-banner.png": "/static/media/sweden-banner.841fe82f1be3135742ea.png",
     "static/media/me.jpg": "/static/media/me.22bf3bbd32adabce7942.jpg",
     "static/media/oncoffee-banner.png": "/static/media/oncoffee-banner.9b2e44cf5d4e5fa6eb04.png",
@@ -16,10 +16,10 @@
     "static/media/TSChat.png": "/static/media/TSChat.077e2fec2fe78d85d541.png",
     "index.html": "/index.html",
     "main.feb92d2a.css.map": "/static/css/main.feb92d2a.css.map",
-    "main.fa24c447.js.map": "/static/js/main.fa24c447.js.map"
+    "main.594264fe.js.map": "/static/js/main.594264fe.js.map"
   },
   "entrypoints": [
     "static/css/main.feb92d2a.css",
-    "static/js/main.fa24c447.js"
+    "static/js/main.594264fe.js"
   ]
 }
