@@ -36,7 +36,15 @@ const Contact = () => {
         </div>
         <div className="contact-box discord">
           <i className="fa-brands fa-discord"></i> &nbsp;
-          <p>rach#7705</p>
+          <p>
+            <a
+              href="https://discord.com/users/392839201034338316"
+              target="_blank"
+              rel="noreferrer"
+            >
+              rach#1337
+            </a>
+          </p>
         </div>
       </div>
     </div>
