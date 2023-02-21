@@ -290,12 +290,13 @@ function App() {
               <h1>Henrique</h1>
               <h2>Software Developer</h2>
               <a
-                href="https://github.com/rachzy"
+                href={require("./assets/resume.pdf")}
+                download={"Henrique-Ferreira-Resume.pdf"}
                 target={"_blank"}
                 rel="noreferrer"
               >
                 <Button>
-                  <i className="fa-brands fa-github"></i> My GitHub
+                  <i className="fa-solid fa-download"></i> My Resume
                 </Button>
               </a>
             </div>
