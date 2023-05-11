@@ -256,6 +256,20 @@ function App() {
       repositoryUrl: "https://github.com/rachzy/fastalk",
     },
     {
+      title: "Rede Cabral",
+      briefDescription: "The profile website of a Brazilian franchise.",
+      description: `I was thrilled to be entrusted with the development of an exciting 
+      project for the renowned franchise, Rede Cabral, located in the vibrant region of 
+      Minas Gerais. Leveraging the power of React and TypeScript, I meticulously crafted 
+      a collection of captivating landing pages that exude creativity and innovation. 
+      These pages seamlessly blend aesthetics with functionality, leaving a lasting impression
+      on visitors.`,
+      thumbnail: "redecabral-thumbnail.png",
+      banner: "redecabral-banner.png",
+      tags: ["HTML", "CSS", "TypeScript", "React"],
+      repositoryUrl: "https://github.com/rachzy/projeto-cabral",
+    },
+    {
       title: "Animeasy",
       briefDescription: "A mobile application to easily watch animes.",
       description: `Animeasy is a "far from finished" project that I was developing just for fun 

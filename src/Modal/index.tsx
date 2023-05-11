@@ -40,9 +40,11 @@ const Modal: React.FC<IProps> = ({ modal, setModal }) => {
             </a>
           )}
         </div>
-        <div className="modal-image">
-          <img src={require(`../assets/${modal.image}`)} alt={modal.image} />
-        </div>
+        {modal.image && (
+          <div className="modal-image">
+            <img src={require(`../assets/${modal.image}`)} alt={modal.image} />
+          </div>
+        )}
       </div>
     </main>
   );
