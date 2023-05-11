@@ -273,6 +273,23 @@ function App() {
       websiteUrl: "https://redecabral.com.br",
     },
     {
+      title: "Criar Ideias",
+      briefDescription: "The portfolio of the company I currently work for.",
+      description: `I had the privilege of contributing to the creation of my 
+      current company's captivating portfolio website. While building upon the 
+      solid foundation of pure HTML and CSS developed by my talented teammates, 
+      I seamlessly integrated React and TypeScript to enhance its functionality 
+      and interactivity. The process was immensely gratifying, as we collectively 
+      crafted a cutting-edge landing page that boasts an exceptional design. The 
+      culmination of our efforts yielded an awe-inspiring final result that truly 
+      stands out in today's modern digital landscape.`,
+      thumbnail: "criarideias-thumbnail.png",
+      banner: "criarideias-banner.png",
+      tags: ["HTML", "CSS", "TypeScript", "React"],
+      repositoryUrl: "https://github.com/criarideias/criarideias-front",
+      websiteUrl: "https://criarideias.com.br",
+    },
+    {
       title: "Animeasy",
       briefDescription: "A mobile application to easily watch animes.",
       description: `Animeasy is a "far from finished" project that I was developing just for fun 
