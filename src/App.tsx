@@ -40,6 +40,7 @@ export type project = {
   banner: string;
   tags: string[];
   repositoryUrl?: string;
+  websiteUrl?: string;
 };
 
 export type modal = {
@@ -47,11 +48,11 @@ export type modal = {
   description: string;
   image: string;
   tags?: string[];
-  button?: {
+  buttons?: {
     title: string;
     color?: string;
     url: string;
-  };
+  }[];
   enabled: boolean;
 };
 
@@ -60,6 +61,7 @@ function App() {
     title: "",
     description: "",
     image: "",
+    buttons: [],
     enabled: false,
   });
 
@@ -268,6 +270,7 @@ function App() {
       banner: "redecabral-banner.png",
       tags: ["HTML", "CSS", "TypeScript", "React"],
       repositoryUrl: "https://github.com/rachzy/projeto-cabral",
+      websiteUrl: "https://redecabral.com.br",
     },
     {
       title: "Animeasy",

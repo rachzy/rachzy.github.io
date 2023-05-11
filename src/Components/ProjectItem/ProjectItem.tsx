@@ -12,23 +12,32 @@ const ProjectItem: React.FC<IProps> = ({ project, setModal }) => {
     const newModal: modal = {
       title: project.title,
       description: project.description,
+      buttons: [],
       image: project.banner,
       tags: project.tags,
       enabled: true,
     };
 
+    if (project.websiteUrl) {
+      newModal.buttons?.push({
+        title: "WEBSITE",
+        url: project.websiteUrl,
+        color: "chartreuse",
+      });
+    }
+
     if (project.repositoryUrl) {
       if (project.repositoryUrl.includes("discord")) {
-        newModal.button = {
+        newModal.buttons?.push({
           title: "DISCORD",
           color: "#5865F2",
           url: project.repositoryUrl,
-        };
+        });
       } else {
-        newModal.button = {
+        newModal.buttons?.push({
           title: "REPOSITORY",
           url: project.repositoryUrl,
-        };
+        });
       }
 
       setModal(newModal);

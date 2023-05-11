@@ -55,7 +55,7 @@ div.modal-content {
   background-color: #16161a;
 }
 
-div.modal-content div {
+div.modal-content div.modal-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -82,6 +82,8 @@ div.modal-content button {
   letter-spacing: 0.5vh;
   border: none;
 
+  margin: 1vh;
+
   cursor: pointer;
   transition: 0.2s all;
 }
@@ -96,7 +98,7 @@ div.modal-content button:hover {
     width: 90%;
   }
 
-  div.modal-content div {
+  div.modal-content div.modal-wrapper {
     width: 100%;
     padding: 0px;
   }
@@ -106,4 +108,11 @@ div.modal-content button:hover {
     margin-left: 0px;
     margin-top: 2vh;
   }
+}
+
+div.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
 }
