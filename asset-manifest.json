@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.f0bc7a8d.css",
-    "main.js": "/static/js/main.f699e2c4.js",
+    "main.js": "/static/js/main.9c2a7a20.js",
     "static/media/sweden-banner.png": "/static/media/sweden-banner.841fe82f1be3135742ea.png",
     "static/media/redecabral-banner.png": "/static/media/redecabral-banner.28b74b79030a9a80f070.png",
     "static/media/me.jpg": "/static/media/me.22bf3bbd32adabce7942.jpg",
+    "static/media/higher-banner.png": "/static/media/higher-banner.93170e41a583f3aa6a93.png",
     "static/media/oncoffee-banner.png": "/static/media/oncoffee-banner.9b2e44cf5d4e5fa6eb04.png",
     "static/media/spaceinvaders-banner.png": "/static/media/spaceinvaders-banner.28dc71142f8b69802be8.png",
+    "static/media/higher-thumbnail.png": "/static/media/higher-thumbnail.80deaca63ba5cc44c645.png",
     "static/media/criarideias-banner.png": "/static/media/criarideias-banner.a16ef09603de2793bfbe.png",
     "static/media/oncoffee-thumbnail.png": "/static/media/oncoffee-thumbnail.81a8f62a022aca30b1af.png",
     "static/media/resume.pdf": "/static/media/resume.3a8ebc85dc2c0dbf2d81.pdf",
@@ -20,10 +22,10 @@
     "static/media/criarideias-thumbnail.png": "/static/media/criarideias-thumbnail.dd696ad6fa1652175268.png",
     "index.html": "/index.html",
     "main.f0bc7a8d.css.map": "/static/css/main.f0bc7a8d.css.map",
-    "main.f699e2c4.js.map": "/static/js/main.f699e2c4.js.map"
+    "main.9c2a7a20.js.map": "/static/js/main.9c2a7a20.js.map"
   },
   "entrypoints": [
     "static/css/main.f0bc7a8d.css",
-    "static/js/main.f699e2c4.js"
+    "static/js/main.9c2a7a20.js"
   ]
 }
