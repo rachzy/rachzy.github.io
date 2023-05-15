@@ -42,7 +42,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              rach#1337
+              rach#2043
             </a>
           </p>
         </div>
