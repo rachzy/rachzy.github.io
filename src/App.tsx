@@ -273,6 +273,25 @@ function App() {
       websiteUrl: "https://redecabral.com.br",
     },
     {
+      title: "HigheR",
+      briefDescription:
+        "A portfolio website for a fictional company that creates futuristic technology",
+      description: `This project was a collaborative school assignment where I worked with 
+      three classmates to create a functional website for a company, real or fictional. We 
+      decided to invent our own fictional company called "Higher" that specialized in futuristic 
+      technology like hoverboards, holograms, and spaceships, which we were all passionate about. 
+      Our goal was to design a unique website that blended modern web application layouts with a 
+      completely original design. My specific role was to transform the design concept from Figma 
+      into a functional web application using React with TypeScript, aiming to deliver the best user 
+      experience possible.
+      `,
+      thumbnail: "higher-thumbnail.png",
+      banner: "higher-banner.png",
+      tags: ["HTML", "CSS", "TypeScript", "React"],
+      repositoryUrl: "https://github.com/oBST01/HigheR",
+      websiteUrl: "https://rachzy.github.io/HigheR",
+    },
+    {
       title: "Criar Ideias",
       briefDescription: "The portfolio of the company I currently work for.",
       description: `I had the privilege of contributing to the creation of my 
