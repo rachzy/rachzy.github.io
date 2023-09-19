@@ -276,13 +276,24 @@ function App() {
       title: "Agrocafé",
       briefDescription:
         "The portfolio of a coffee irrigation company of my city.",
-      description: `n this project, I developed a standout landing page for a reputable irrigation 
+      description: `In this project, I developed a standout landing page for a reputable irrigation 
       services company. Leveraging React and Typescript, I efficiently created a unique and impressive 
       page. Despite the challenge of ensuring flawless performance across all devices, I successfully 
       delivered an exceptional project. The client was delighted with the outcome, and I gained valuable
        experience in web development through this collaboration. Looking forward to future challenges!`,
       thumbnail: "agrocafe-thumbnail.png",
       banner: "agrocafe-banner.jpg",
+      tags: ["HTML", "CSS", "TypeScript", "React"],
+      repositoryUrl: "https://github.com/rachzy/agrocafe",
+      websiteUrl: "http://www.agrocafeirrigacao.com.br",
+    },
+    {
+      title: "Hubtel",
+      briefDescription:
+        "A completely rebranded layout for the services page of a Telecom company in Goiás.",
+      description: `For this one, I had the job to recreate the layout of the services page of a famous telecommuncation company in Goiás.`,
+      thumbnail: "hubtel-thumbnail.png",
+      banner: "hubtel-banner.png",
       tags: ["HTML", "CSS", "TypeScript", "React"],
       repositoryUrl: "https://github.com/rachzy/agrocafe",
       websiteUrl: "http://www.agrocafeirrigacao.com.br",
