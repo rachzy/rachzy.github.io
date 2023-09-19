@@ -289,14 +289,16 @@ function App() {
     },
     {
       title: "Hubtel",
-      briefDescription:
-        "A completely rebranded layout for the services page of a Telecom company in Goiás.",
-      description: `For this one, I had the job to recreate the layout of the services page of a famous telecommuncation company in Goiás.`,
+      briefDescription: `A completely redesigned layout for the "Services" page of a Telecom company in Goiás.`,
+      description: `For this one, I had the job to recreate the layout of the "Services" page of a telecommunication 
+      company in Goiás. Me and my team were able to build something compact and quite modern, able to fit in the screens of
+      every single device commonly used today. I've also worked on making the back-end able to work fine and attend the requirements
+      of the new layout, leading me to modify the structure of the database and the application's legacy source code.`,
       thumbnail: "hubtel-thumbnail.png",
       banner: "hubtel-banner.png",
-      tags: ["HTML", "CSS", "TypeScript", "React"],
-      repositoryUrl: "https://github.com/rachzy/agrocafe",
-      websiteUrl: "http://www.agrocafeirrigacao.com.br",
+      tags: ["HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+      repositoryUrl: "https://github.com/rachzy/hubtel-planos",
+      websiteUrl: "https://hubtel.com.br",
     },
     {
       title: "HigheR",
