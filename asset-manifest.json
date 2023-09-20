@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f0bc7a8d.css",
-    "main.js": "/static/js/main.66c3c031.js",
+    "main.js": "/static/js/main.f36b7236.js",
     "static/media/sweden-banner.png": "/static/media/sweden-banner.841fe82f1be3135742ea.png",
     "static/media/redecabral-banner.png": "/static/media/redecabral-banner.28b74b79030a9a80f070.png",
     "static/media/me.jpg": "/static/media/me.22bf3bbd32adabce7942.jpg",
@@ -15,6 +15,7 @@
     "static/media/sweden-thumbnail.png": "/static/media/sweden-thumbnail.444c2076d0f89417750d.png",
     "static/media/agrocafe-thumbnail.png": "/static/media/agrocafe-thumbnail.f3898504b83380ad893c.png",
     "static/media/animeasy-thumbnail.png": "/static/media/animeasy-thumbnail.6ff05ca114d2a75d7ec3.png",
+    "static/media/hubtel-banner.png": "/static/media/hubtel-banner.2d823f50a6941f2cf261.png",
     "static/media/agrocafe-banner.jpg": "/static/media/agrocafe-banner.7e5291a56c22359770f4.jpg",
     "static/media/redecabral-thumbnail.png": "/static/media/redecabral-thumbnail.0a69dc5979e8486d2700.png",
     "static/media/fastalk-banner.png": "/static/media/fastalk-banner.e672c27017d4148887d1.png",
@@ -23,10 +24,10 @@
     "static/media/criarideias-thumbnail.png": "/static/media/criarideias-thumbnail.dd696ad6fa1652175268.png",
     "index.html": "/index.html",
     "main.f0bc7a8d.css.map": "/static/css/main.f0bc7a8d.css.map",
-    "main.66c3c031.js.map": "/static/js/main.66c3c031.js.map"
+    "main.f36b7236.js.map": "/static/js/main.f36b7236.js.map"
   },
   "entrypoints": [
     "static/css/main.f0bc7a8d.css",
-    "static/js/main.66c3c031.js"
+    "static/js/main.f36b7236.js"
   ]
 }
