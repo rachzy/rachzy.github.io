@@ -1,0 +1,72 @@
+div.download-options {
+    background-color: #222222dc;
+    padding: 3vh;
+
+    position: absolute;
+    margin-top: 3vh;
+    border-radius: 1vh;
+
+    display: none;
+}
+
+div.download-options.active {
+    display: block;
+}
+
+div.download-options:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 0.688em solid transparent;
+	border-bottom-color: #222222be;
+	border-top: 0;
+	margin-left: -0.687em;
+	margin-top: -0.687em;
+}
+
+div.download-options form {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 2vh;
+
+    border: 0.1rem solid rgb(175, 175, 175);
+    padding: 2vh;
+}
+
+div.download-options input {
+    outline: none;
+}
+
+div.download-options label {
+    color: #2eafd6;
+    margin-left: 1vh;
+}
+
+div.download-options button {
+    width: 100%;
+
+    background-color: gray;
+    color: white;
+    
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+
+    margin-top: 2vh;
+    border-radius: 3rem;
+
+    transition: 0.2s all;
+}
+
+div.download-options button.active {
+    background-color: #2eafd6;
+}
+
+div.download-options button:hover {
+    transform: scale(1.05);
+}

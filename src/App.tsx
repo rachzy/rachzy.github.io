@@ -18,6 +18,7 @@ import Skills from "./Components/Skills/Skills";
 import Terminal from "./Components/Terminal/Terminal";
 import TopLeftWrapper from "./Components/TopLeftWrapper/TopLeftWrapper";
 import Modal from "./Modal";
+import DownloadBox from "./Components/DownloadBox";
 
 export type skill = {
   id: string;
@@ -56,6 +57,13 @@ export type modal = {
   enabled: boolean;
 };
 
+export type downloadOption = {
+  id: string;
+  label: string;
+  subOptions?: downloadOption;
+  downloadFile?: string;
+}[];
+
 function App() {
   const [modal, setModal] = useState<modal>({
     title: "",
@@ -64,6 +72,7 @@ function App() {
     buttons: [],
     enabled: false,
   });
+  const [resumeOptionsVisible, setResumeOptionsVisible] = useState(false);
 
   const skills: skill[] = [
     {
@@ -229,7 +238,7 @@ function App() {
       The server is still online, and you can access it through the IP: redesweden.com`,
       thumbnail: "sweden-thumbnail.png",
       banner: "sweden-banner.png",
-      tags: ["Java", "MySQL"]
+      tags: ["Java", "MySQL"],
     },
     {
       title: "Oncoffee",
@@ -242,7 +251,7 @@ function App() {
       banner: "oncoffee-banner.png",
       tags: ["HTML", "CSS", "JavaScript", "React", "Node", "MongoDB"],
       repositoryUrl: "https://github.com/rachzy/Oncoffee",
-      websiteUrl: "https://rachzy.github.io/Oncoffee"
+      websiteUrl: "https://rachzy.github.io/Oncoffee",
     },
     {
       title: "Fastalk",
@@ -335,7 +344,8 @@ function App() {
     },
     {
       title: "Criar Ideias",
-      briefDescription: "The portfolio of a company I've worked for in the past.",
+      briefDescription:
+        "The portfolio of a company I've worked for in the past.",
       description: `I had the privilege of contributing to the creation of a captivating 
       portfolio website for the first company I've ever worked for. While building upon the 
       solid foundation of pure HTML and CSS developed by my talented teammates, 
@@ -352,7 +362,8 @@ function App() {
     },
     {
       title: "Geoespinhaço",
-      briefDescription: "A demo website for a research made by a geography teacher.",
+      briefDescription:
+        "A demo website for a research made by a geography teacher.",
       description: `A Website developed for a teacher in my school, which was created together
       with my team in "Farmando XP", a project developed by my teacher Gilberto to help students
       that want to follow the career of software/web development to get some more experience and be
@@ -367,7 +378,8 @@ function App() {
     },
     {
       title: "Botânica",
-      briefDescription: "A portfolio website for a virtual store of natural products.",
+      briefDescription:
+        "A portfolio website for a virtual store of natural products.",
       description: `A portfolio developed for the owner of a virtual store, by me and
       my team in "Farmando XP", a project developed by my teacher Gilberto to help students
       that want to follow the career of software/web development to get some more experience and be
@@ -405,6 +417,30 @@ function App() {
     },
   ];
 
+  const downloadOptions: downloadOption = [
+    {
+      id: "portuguese-lang",
+      label: "Portuguese (BR)",
+      subOptions: [
+        {
+          id: "portuguese-default",
+          label: "Complete Resume",
+          downloadFile: "./assets/resume-portuguese-default.pdf",
+        },
+        {
+          id: "portuguese-simplified",
+          label: "Simplified Resume",
+          downloadFile: "./assets/resume-portuguese-simplified.pdf",
+        },
+      ],
+    },
+    {
+      id: "english-lang",
+      label: "English",
+      downloadFile: "./assets/resume-english.pdf",
+    },
+  ];
+
   return (
     <Fragment>
       <Modal modal={modal} setModal={setModal} />
@@ -416,16 +452,10 @@ function App() {
               <p>👋 Hello World, my name is</p>
               <h1>Henrique</h1>
               <h2>Software Developer</h2>
-              <a
-                href={require("./assets/resume.pdf")}
-                download={"Henrique-Ferreira-Resume.pdf"}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <Button>
+                <Button onClick={() => setResumeOptionsVisible((currentValue) => !currentValue)}>
                   <i className="fa-solid fa-download"></i> My Resume
                 </Button>
-              </a>
+              <DownloadBox downloadOptions={downloadOptions} visible={resumeOptionsVisible} />
             </div>
           </TopLeftWrapper>
         </LeftWrapper>

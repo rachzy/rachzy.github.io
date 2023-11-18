@@ -6,9 +6,9 @@ const Terminal = () => {
   const [outputLineText, setOutputLineText] = useState("");
 
   const commandLineValue =
-    'console.log("Just a guy vibin in Brazil with his cat and his wifey");';
+    'console.log("Just a guy vibin in Brazil with his cat and his girlfriend");';
   const outputLineValue =
-    '> "Just a guy vibin in Brazil with his cat and his wifey"';
+    '> "Just a guy vibin in Brazil with his cat and his girlfriend"';
 
   useEffect(() => {
     if (commandLineText.length >= commandLineValue.length) {
