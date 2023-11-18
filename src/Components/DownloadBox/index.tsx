@@ -17,7 +17,7 @@ const DownloadBox: React.FC<IProps> = ({ downloadOptions, visible }) => {
   function renderDownloadOptions() {
     const downloadSection =
       currentSection === 0 ? downloadOptions : downloadOptions[0].subOptions;
-    return downloadSection?.map((option, index) => {
+    return downloadSection?.map((option) => {
       return (
         <div key={option.id}>
           <input
@@ -26,7 +26,7 @@ const DownloadBox: React.FC<IProps> = ({ downloadOptions, visible }) => {
             id={option.id}
             value={option.label}
             onClick={() => {
-                setCurrentSelectedOptionID(option.id);
+              setCurrentSelectedOptionID(option.id);
             }}
           />
           <label htmlFor={option.id}>{option.label}</label>
@@ -36,7 +36,13 @@ const DownloadBox: React.FC<IProps> = ({ downloadOptions, visible }) => {
   }
 
   function getCurrentSelectedOption() {
-    return downloadOptions.find(
+    if (currentSection === 0) {
+      return downloadOptions.find(
+        (option) => option.id === currentSelectedOptionID
+      );
+    }
+
+    return downloadOptions[0].subOptions?.find(
       (option) => option.id === currentSelectedOptionID
     );
   }
@@ -49,31 +55,48 @@ const DownloadBox: React.FC<IProps> = ({ downloadOptions, visible }) => {
     return true;
   }
 
-  function renderButtonLabel(): string {
-    if(!currentSelectedOptionID) {
-        return "Please select...";
-    }
-    if (checkSuboptions()) {
-      return "Proceed >>";
-    }
-    return "Download";
-  }
-
   function handleButtonClick() {
     const currentSelectedOption = getCurrentSelectedOption();
     if (!currentSelectedOption) return;
 
-    if (currentSelectedOption.downloadFile) {
-      return window.open(currentSelectedOption.downloadFile);
-    }
+    if (currentSelectedOption.downloadFile) return;
 
     setCurrentSection((currentValue) => currentValue + 1);
     setCurrentSelectedOptionID(null);
   }
+
+  function renderButton(): JSX.Element {
+    const selectedOption = getCurrentSelectedOption();
+    if (!selectedOption || !currentSelectedOptionID) {
+      return <button onClick={handleButtonClick}>Please select...</button>;
+    }
+
+    if (checkSuboptions()) {
+      return (
+        <button className="active" onClick={handleButtonClick}>
+          Proceed {">>"}
+        </button>
+      );
+    }
+
+    return (
+      <a
+        href={require(`../../assets/${selectedOption.downloadFile}`)}
+        download={`${selectedOption.id}.pdf`}
+        target={"_blank"}
+        rel="noreferrer"
+      >
+        <button className="active" onClick={handleButtonClick}>
+          Download
+        </button>
+      </a>
+    );
+  }
+
   return (
     <div className={`download-options ${visible && "active"}`}>
       <form>{renderDownloadOptions()}</form>
-      <button className={currentSelectedOptionID ? "active" : ""} onClick={handleButtonClick}>{renderButtonLabel()}</button>
+      {renderButton()}
     </div>
   );
 };

@@ -423,21 +423,21 @@ function App() {
       label: "Portuguese (BR)",
       subOptions: [
         {
-          id: "portuguese-default",
+          id: "Henrique_Ferreira_CV",
           label: "Complete Resume",
-          downloadFile: "./assets/resume-portuguese-default.pdf",
+          downloadFile: "resume-portuguese.pdf",
         },
         {
-          id: "portuguese-simplified",
+          id: "Henrique_Ferreira_CV_Simplificado",
           label: "Simplified Resume",
-          downloadFile: "./assets/resume-portuguese-simplified.pdf",
+          downloadFile: "resume-portuguese-simplified.pdf",
         },
       ],
     },
     {
-      id: "english-lang",
+      id: "Henrique_Ferreira_Resume",
       label: "English",
-      downloadFile: "./assets/resume-english.pdf",
+      downloadFile: "resume.pdf",
     },
   ];
 
@@ -452,10 +452,17 @@ function App() {
               <p>👋 Hello World, my name is</p>
               <h1>Henrique</h1>
               <h2>Software Developer</h2>
-                <Button onClick={() => setResumeOptionsVisible((currentValue) => !currentValue)}>
-                  <i className="fa-solid fa-download"></i> My Resume
-                </Button>
-              <DownloadBox downloadOptions={downloadOptions} visible={resumeOptionsVisible} />
+              <Button
+                onClick={() =>
+                  setResumeOptionsVisible((currentValue) => !currentValue)
+                }
+              >
+                <i className="fa-solid fa-download"></i> My Resume
+              </Button>
+              <DownloadBox
+                downloadOptions={downloadOptions}
+                visible={resumeOptionsVisible}
+              />
             </div>
           </TopLeftWrapper>
         </LeftWrapper>
