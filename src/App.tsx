@@ -462,6 +462,7 @@ function App() {
               <DownloadBox
                 downloadOptions={downloadOptions}
                 visible={resumeOptionsVisible}
+                setVisible={setResumeOptionsVisible}
               />
             </div>
           </TopLeftWrapper>

@@ -6,9 +6,10 @@ import { downloadOption } from "../../App";
 interface IProps {
   downloadOptions: downloadOption;
   visible: boolean;
+  setVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const DownloadBox: React.FC<IProps> = ({ downloadOptions, visible }) => {
+const DownloadBox: React.FC<IProps> = ({ downloadOptions, visible, setVisible }) => {
   const [currentSection, setCurrentSection] = useState<number>(0);
   const [currentSelectedOptionID, setCurrentSelectedOptionID] = useState<
     string | null
@@ -59,7 +60,11 @@ const DownloadBox: React.FC<IProps> = ({ downloadOptions, visible }) => {
     const currentSelectedOption = getCurrentSelectedOption();
     if (!currentSelectedOption) return;
 
-    if (currentSelectedOption.downloadFile) return;
+    if (currentSelectedOption.downloadFile) {
+        setVisible(false);
+        setCurrentSection(0);
+        return setCurrentSelectedOptionID(null);;
+    }
 
     setCurrentSection((currentValue) => currentValue + 1);
     setCurrentSelectedOptionID(null);
