@@ -197,11 +197,10 @@ function App() {
           isHTML: false,
         },
         {
-          class: "",
-          color: "#F48120",
-          title: "Cloudflare",
-          innerHTML: '<span class="iconify" data-icon="cib:cloudflare"></span>',
-          isHTML: true,
+          class: "fa-brands fa-docker",
+          color: "#0db7ed",
+          title: "Docker",
+          isHTML: false,
         },
         {
           class: "icon-shell",
