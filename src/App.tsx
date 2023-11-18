@@ -229,8 +229,7 @@ function App() {
       The server is still online, and you can access it through the IP: redesweden.com`,
       thumbnail: "sweden-thumbnail.png",
       banner: "sweden-banner.png",
-      tags: ["Java", "MySQL"],
-      repositoryUrl: "https://discord.io/redesweden",
+      tags: ["Java", "MySQL"]
     },
     {
       title: "Oncoffee",
@@ -242,7 +241,8 @@ function App() {
       thumbnail: "oncoffee-thumbnail.png",
       banner: "oncoffee-banner.png",
       tags: ["HTML", "CSS", "JavaScript", "React", "Node", "MongoDB"],
-      repositoryUrl: "https://github.com/rachzy/oncoffee",
+      repositoryUrl: "https://github.com/rachzy/Oncoffee",
+      websiteUrl: "https://rachzy.github.io/Oncoffee"
     },
     {
       title: "Fastalk",
@@ -273,6 +273,21 @@ function App() {
     },
     {
       title: "Agrocafé",
+      briefDescription:
+        "The portfolio of a company focused on the development of the agribusiness of my city.",
+      description: `In this project, I developed a standout landing page for a reputable irrigation 
+      services company. Leveraging React and Typescript, I efficiently created a unique and impressive 
+      page. Despite the challenge of ensuring flawless performance across all devices, I successfully 
+      delivered an exceptional project. The client was delighted with the outcome, and I gained valuable
+       experience in web development through this collaboration. Looking forward to future challenges!`,
+      thumbnail: "agrocafe2-thumbnail.png",
+      banner: "agrocafe2-banner.png",
+      tags: ["HTML", "CSS", "TypeScript", "React"],
+      repositoryUrl: "https://github.com/rachzy/agrocafe-2",
+      websiteUrl: "https://www.agrocafe.com",
+    },
+    {
+      title: "Agrocafé Irrigação",
       briefDescription:
         "The portfolio of a coffee irrigation company of my city.",
       description: `In this project, I developed a standout landing page for a reputable irrigation 
@@ -320,9 +335,9 @@ function App() {
     },
     {
       title: "Criar Ideias",
-      briefDescription: "The portfolio of the company I currently work for.",
-      description: `I had the privilege of contributing to the creation of my 
-      current company's captivating portfolio website. While building upon the 
+      briefDescription: "The portfolio of a company I've worked for in the past.",
+      description: `I had the privilege of contributing to the creation of a captivating 
+      portfolio website for the first company I've ever worked for. While building upon the 
       solid foundation of pure HTML and CSS developed by my talented teammates, 
       I seamlessly integrated React and TypeScript to enhance its functionality 
       and interactivity. The process was immensely gratifying, as we collectively 
@@ -334,6 +349,38 @@ function App() {
       tags: ["HTML", "CSS", "TypeScript", "React"],
       repositoryUrl: "https://github.com/criarideias/criarideias-front",
       websiteUrl: "https://criarideias.com.br",
+    },
+    {
+      title: "Geoespinhaço",
+      briefDescription: "A demo website for a research made by a geography teacher.",
+      description: `A Website developed for a teacher in my school, which was created together
+      with my team in "Farmando XP", a project developed by my teacher Gilberto to help students
+      that want to follow the career of software/web development to get some more experience and be
+      able to find new opportunities as soon as possible. As it was our first project, we decided to
+      go slow and make it simpler, but still we've reached something great and that could fit the wishes
+      of the teacher, who loved it.`,
+      thumbnail: "geoespinhaco-thumbnail.svg",
+      banner: "geoespinhaco-banner.png",
+      tags: ["HTML", "CSS", "JavaScript"],
+      repositoryUrl: "https://github.com/Farmando-XP/geoespinhaco",
+      websiteUrl: "https://farmando-xp.github.io/geoespinhaco/",
+    },
+    {
+      title: "Botânica",
+      briefDescription: "A portfolio website for a virtual store of natural products.",
+      description: `A portfolio developed for the owner of a virtual store, by me and
+      my team in "Farmando XP", a project developed by my teacher Gilberto to help students
+      that want to follow the career of software/web development to get some more experience and be
+      able to find new opportunities as soon as possible. As our second project, we tried to make
+      something more sophisticated than our last one, but we still didn't use any framework or new
+      technology, since that wouldn't be necessary for such a small project. The final result was great
+      and I loved to see the growth and evolution of my team along with the development! The owner of
+      Botânica really liked the final result.`,
+      thumbnail: "botanica-thumbnail.png",
+      banner: "botanica-banner.png",
+      tags: ["HTML", "CSS"],
+      repositoryUrl: "https://github.com/Farmando-XP/botanica",
+      websiteUrl: "https://farmando-xp.github.io/botanica/",
     },
     {
       title: "Animeasy",
