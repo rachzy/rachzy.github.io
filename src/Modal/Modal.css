@@ -103,6 +103,13 @@ div.modal-content button:hover {
     padding: 0px;
   }
 
+  div.modal-content div.modal-wrapper p {
+    max-height: 30vh;
+    overflow-y: scroll;
+    text-align: justify;
+    padding-inline: 2vh;
+  }
+
   div.modal-content img {
     width: 80%;
     margin-left: 0px;
@@ -115,4 +122,33 @@ div.buttons-wrapper {
   flex-wrap: wrap;
 
   justify-content: space-around;
+}
+
+/* MODAL TAGS */
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.modal-tags span {
+  border: 1px solid rgba(127, 255, 212);
+  margin: 1vh;
+  color: rgb(127, 255, 212);
+  padding: 3px 10px;
+  border-radius: 1.5vh;
+}
+
+.modal-description button {
+  padding: 5px;
+  border-radius: 1.5vh;
+
+  color: white;
+  max-width: 90%;
+
+  font-size: 2.5vh;
+  letter-spacing: 2px;
 }

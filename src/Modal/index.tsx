@@ -9,7 +9,7 @@ interface IProps {
 }
 
 const Modal: React.FC<IProps> = ({ modal, setModal }) => {
-  const renderButtons = (): JSX.Element[] | null => {
+  function renderButtons(): JSX.Element[] | null {
     if (!modal.buttons) return null;
     return modal.buttons.map((button) => {
       return (
@@ -33,6 +33,13 @@ const Modal: React.FC<IProps> = ({ modal, setModal }) => {
       );
     });
   };
+
+  function renderTags(): JSX.Element[] | null {
+    if(!modal.tags) return null;
+    return modal.tags?.map((tag) => {
+      return <span key={tag}>{tag}</span>;
+    });
+  }
   return (
     <main className={`modal-container ${modal.enabled && "active"}`}>
       <button
@@ -49,6 +56,9 @@ const Modal: React.FC<IProps> = ({ modal, setModal }) => {
         <div className="modal-wrapper description">
           <h1>{modal.title}</h1>
           <p>{modal.description}</p>
+          <div className="modal-tags">
+          {renderTags()}
+        </div>
           <div className="buttons-wrapper">{renderButtons()}</div>
         </div>
         {modal.image && (

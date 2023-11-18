@@ -40,8 +40,8 @@ const ProjectItem: React.FC<IProps> = ({ project, setModal }) => {
         });
       }
 
-      setModal(newModal);
     }
+    setModal(newModal);
   };
   return (
     <div className="project">
