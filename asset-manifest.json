@@ -1,33 +1,41 @@
 {
   "files": {
-    "main.css": "/static/css/main.f0bc7a8d.css",
-    "main.js": "/static/js/main.f36b7236.js",
+    "main.css": "/static/css/main.6aaec7b4.css",
+    "main.js": "/static/js/main.82e3bea5.js",
+    "static/media/botanica-thumbnail.png": "/static/media/botanica-thumbnail.fd8a62d6a07167465c5e.png",
     "static/media/sweden-banner.png": "/static/media/sweden-banner.841fe82f1be3135742ea.png",
     "static/media/redecabral-banner.png": "/static/media/redecabral-banner.28b74b79030a9a80f070.png",
     "static/media/me.jpg": "/static/media/me.22bf3bbd32adabce7942.jpg",
+    "static/media/agrocafe2-banner.png": "/static/media/agrocafe2-banner.c32d5de02d02f67d5b71.png",
+    "static/media/geoespinhaco-banner.png": "/static/media/geoespinhaco-banner.fdf261162207eedc042b.png",
     "static/media/higher-banner.png": "/static/media/higher-banner.93170e41a583f3aa6a93.png",
     "static/media/oncoffee-banner.png": "/static/media/oncoffee-banner.9b2e44cf5d4e5fa6eb04.png",
     "static/media/spaceinvaders-banner.png": "/static/media/spaceinvaders-banner.28dc71142f8b69802be8.png",
+    "static/media/geoespinhaco-thumbnail.svg": "/static/media/geoespinhaco-thumbnail.a9ecf80b9326e3747cc9.svg",
     "static/media/higher-thumbnail.png": "/static/media/higher-thumbnail.80deaca63ba5cc44c645.png",
     "static/media/criarideias-banner.png": "/static/media/criarideias-banner.a16ef09603de2793bfbe.png",
     "static/media/oncoffee-thumbnail.png": "/static/media/oncoffee-thumbnail.81a8f62a022aca30b1af.png",
-    "static/media/resume.pdf": "/static/media/resume.3a8ebc85dc2c0dbf2d81.pdf",
     "static/media/sweden-thumbnail.png": "/static/media/sweden-thumbnail.444c2076d0f89417750d.png",
+    "static/media/resume-portuguese-simplified.pdf": "/static/media/resume-portuguese-simplified.1ef53757ec6f30237255.pdf",
     "static/media/agrocafe-thumbnail.png": "/static/media/agrocafe-thumbnail.f3898504b83380ad893c.png",
+    "static/media/resume-portuguese.pdf": "/static/media/resume-portuguese.d10e2dca69781e29f808.pdf",
     "static/media/animeasy-thumbnail.png": "/static/media/animeasy-thumbnail.6ff05ca114d2a75d7ec3.png",
+    "static/media/resume.pdf": "/static/media/resume.6d74cf98697e3901221d.pdf",
+    "static/media/agrocafe2-thumbnail.png": "/static/media/agrocafe2-thumbnail.3b0fe490d8584aad70af.png",
     "static/media/hubtel-banner.png": "/static/media/hubtel-banner.2d823f50a6941f2cf261.png",
     "static/media/agrocafe-banner.jpg": "/static/media/agrocafe-banner.7e5291a56c22359770f4.jpg",
     "static/media/redecabral-thumbnail.png": "/static/media/redecabral-thumbnail.0a69dc5979e8486d2700.png",
     "static/media/fastalk-banner.png": "/static/media/fastalk-banner.e672c27017d4148887d1.png",
+    "static/media/botanica-banner.png": "/static/media/botanica-banner.7ddd1fc98b9c24d4c978.png",
     "static/media/fox.jpg": "/static/media/fox.957160c2f887be58ccc1.jpg",
     "static/media/TSChat.png": "/static/media/TSChat.077e2fec2fe78d85d541.png",
     "static/media/criarideias-thumbnail.png": "/static/media/criarideias-thumbnail.dd696ad6fa1652175268.png",
     "index.html": "/index.html",
-    "main.f0bc7a8d.css.map": "/static/css/main.f0bc7a8d.css.map",
-    "main.f36b7236.js.map": "/static/js/main.f36b7236.js.map"
+    "main.6aaec7b4.css.map": "/static/css/main.6aaec7b4.css.map",
+    "main.82e3bea5.js.map": "/static/js/main.82e3bea5.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0bc7a8d.css",
-    "static/js/main.f36b7236.js"
+    "static/css/main.6aaec7b4.css",
+    "static/js/main.82e3bea5.js"
   ]
 }
