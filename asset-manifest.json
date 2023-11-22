@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6aaec7b4.css",
-    "main.js": "/static/js/main.82e3bea5.js",
+    "main.js": "/static/js/main.cd6d62cd.js",
     "static/media/botanica-thumbnail.png": "/static/media/botanica-thumbnail.fd8a62d6a07167465c5e.png",
     "static/media/sweden-banner.png": "/static/media/sweden-banner.841fe82f1be3135742ea.png",
     "static/media/redecabral-banner.png": "/static/media/redecabral-banner.28b74b79030a9a80f070.png",
@@ -32,10 +32,10 @@
     "static/media/criarideias-thumbnail.png": "/static/media/criarideias-thumbnail.dd696ad6fa1652175268.png",
     "index.html": "/index.html",
     "main.6aaec7b4.css.map": "/static/css/main.6aaec7b4.css.map",
-    "main.82e3bea5.js.map": "/static/js/main.82e3bea5.js.map"
+    "main.cd6d62cd.js.map": "/static/js/main.cd6d62cd.js.map"
   },
   "entrypoints": [
     "static/css/main.6aaec7b4.css",
-    "static/js/main.82e3bea5.js"
+    "static/js/main.cd6d62cd.js"
   ]
 }
