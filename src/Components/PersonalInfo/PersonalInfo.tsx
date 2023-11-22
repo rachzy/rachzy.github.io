@@ -13,11 +13,11 @@ const PersonalInfo = () => {
           title="I love artic foxes"
         />
         <p>
-          Hey what's up? I'm Henrique, AKA rachzy, and I'm a Software Developer.
+          Hi! I'm Henrique, AKA rachzy, and I'm a Software Developer.
           I have experience on building web applications, mobile applications,
           minecraft plugins and REST APIs. I'm really into technology,
           entrepeneurship and really like learning new things. Currently, I'm
-          not looking for jobs, but I'm open for new experiences.
+          currently looking for jobs, so feel free to reach me!
         </p>
       </div>
     </div>
