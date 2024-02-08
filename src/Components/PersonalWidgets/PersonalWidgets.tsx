@@ -50,10 +50,20 @@ const PersonalWidgets = () => {
       title: "Education",
       iconClass: "fa fa-graduation-cap",
       content: `
-          <b>Current Institution:</b> Federal Institue of Education, Science and Technology of Triângulo Mineiro <br> <br>
-        <b>Currently cursing:</b> High school <br>
-        <b>Graduating on:</b> Technical IT Course (3 years length)<br> <br>
-        <b>English:</b> 5 years of course in 3 different institutions
+          <b>Institution:</b> Federal University of Uberlândia (UFU) <br>
+        <b>Course:</b> Bachelor in Information Science<br>
+        <b>Duration:</b> 4 years (2024 - 2028)<br>
+        <b>Status:</b> Cursing<br> <br>
+
+        <b>Institution:</b> Federal Institue of Triângulo Mineiro <br>
+        <b>Course:</b> Technical in IT<br>
+        <b>Duration:</b> 3 years (2021 - 2023)<br>
+        <b>Status:</b> Finished<br> <br>
+
+        <b>Institution:</b> Federal Institue of Triângulo Mineiro <br>
+        <b>Course:</b> English (B2)<br>
+        <b>Duration:</b> 1 year (2021)<br>
+        <b>Status:</b> Finished
         `,
     },
     {

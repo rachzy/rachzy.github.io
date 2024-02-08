@@ -16,7 +16,7 @@ const PersonalInfo = () => {
           Hi! I'm Henrique, AKA rachzy, and I'm a Software Developer.
           I have experience on building web applications, mobile applications,
           minecraft plugins and REST APIs. I'm really into technology,
-          entrepeneurship and really like learning new things. Currently, I'm
+          entrepeneurship and really like learning new things. I'm
           currently looking for jobs, so feel free to reach me!
         </p>
       </div>
