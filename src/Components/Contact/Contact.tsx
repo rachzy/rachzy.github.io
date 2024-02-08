@@ -26,7 +26,7 @@ const Contact = () => {
           <i className="fa-brands fa-linkedin"></i> &nbsp;
           <p>
             <a
-              href="https://www.linkedin.com/in/henrique-ferreira-638304239/"
+              href="https://www.linkedin.com/in/henriqueferreiradeveloper"
               target="_blank"
               rel="noreferrer"
             >
@@ -42,7 +42,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              rach#2043
+              rachzy
             </a>
           </p>
         </div>
