@@ -283,7 +283,7 @@ function App() {
     {
       title: "Agrocafé",
       briefDescription:
-        "The portfolio of a company focused on the development of the agribusiness of my city.",
+        "The portfolio of a company focused on the development of the agribusiness of Patrocínio.",
       description: `In this project, I developed a standout landing page for a reputable irrigation 
       services company. Leveraging React and Typescript, I efficiently created a unique and impressive 
       page. Despite the challenge of ensuring flawless performance across all devices, I successfully 
@@ -298,7 +298,7 @@ function App() {
     {
       title: "Agrocafé Irrigação",
       briefDescription:
-        "The portfolio of a coffee irrigation company of my city.",
+        "The portfolio of a coffee irrigation company of Patrocínio.",
       description: `In this project, I developed a standout landing page for a reputable irrigation 
       services company. Leveraging React and Typescript, I efficiently created a unique and impressive 
       page. Despite the challenge of ensuring flawless performance across all devices, I successfully 
@@ -322,6 +322,19 @@ function App() {
       tags: ["HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
       repositoryUrl: "https://github.com/rachzy/hubtel-planos",
       websiteUrl: "https://hubtel.com.br",
+    },
+    {
+      title: "Mundo Novo",
+      briefDescription: `The website of an agricultural company in Minas Gerais.`,
+      description: `A landing page for the website of "Mundo Novo Café - Mercado e Sustentabilidade", a well known agricultural company
+      in eastern Minas Gerais. Working together with "Portfolio", a marketing agency, I was able to deliver a great job in a good time,
+      which was really well seen by the client. I also used this opportunity to try some new technologies that I wasn't really familiarized 
+      with at that time, like Material-UI. `,
+      thumbnail: "mundonovo-thumbnail.png",
+      banner: "mundonovo-banner.png",
+      tags: ["HTML", "CSS", "ReactJS", "TypeScript", "Material-UI", "Atomic Design"],
+      repositoryUrl: "https://github.com/rachzy/portfolio-mundonovo",
+      websiteUrl: "https://mundonovocafe.com.br/",
     },
     {
       title: "HigheR",
@@ -358,7 +371,7 @@ function App() {
       banner: "criarideias-banner.png",
       tags: ["HTML", "CSS", "TypeScript", "React"],
       repositoryUrl: "https://github.com/criarideias/criarideias-front",
-      websiteUrl: "https://criarideias.com.br",
+      websiteUrl: "https://agenciacriarideias.com.br",
     },
     {
       title: "Geoespinhaço",
