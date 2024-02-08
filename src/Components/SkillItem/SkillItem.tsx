@@ -18,7 +18,7 @@ const SkillItem: React.FC<IProps> = ({
   return (
     <div
       className="skill-smallbutton"
-      style={{ borderColor: color, boxShadow: `5px 1px 3vw ${color}` }}
+      style={{ borderColor: color, boxShadow: `3px 1px 1vw ${color}` }}
     >
       {isHTML ? (
         <div
@@ -28,7 +28,7 @@ const SkillItem: React.FC<IProps> = ({
       ) : (
         <i style={{ color: color }} className={iconClass} />
       )}
-      <p style={{ color: color }}>
+      <p style={{ color: color, cursor: "default" }}>
         <strong>{children}</strong>
       </p>
     </div>

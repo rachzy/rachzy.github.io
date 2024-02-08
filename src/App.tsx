@@ -126,6 +126,22 @@ function App() {
             '<span class="iconify" data-icon="akar-icons:nextjs-fill"></span>',
           isHTML: true,
         },
+        {
+          class: "",
+          color: "#007fff",
+          title: "Material-UI",
+          innerHTML:
+            '<span class="iconify" data-icon="logos:material-ui"></span>',
+          isHTML: true,
+        },
+        {
+          class: "",
+          color: "#c1694f",
+          title: "Zustand",
+          innerHTML:
+            '<span class="iconify" data-icon="twemoji:bear"></span>',
+          isHTML: true,
+        },
       ],
       mainIconClass: "fa-solid fa-code",
     },
@@ -140,17 +156,41 @@ function App() {
           isHTML: false,
         },
         {
+          class: "",
+          title: "ExpressJS",
+          color: "#f4f2ed",
+          innerHTML:
+            '<span class="iconify" data-icon="skill-icons:expressjs-light"></span>',
+          isHTML: true,
+        },
+        {
+          class: "",
+          title: "NestJS",
+          color: "#e0234e",
+          innerHTML: '<span class="iconify" data-icon="logos:nestjs"></span>',
+          isHTML: true,
+        },
+        {
+          class: "",
+          title: "TypeORM",
+          color: "#ffab00",
+          innerHTML: '<span class="iconify" data-icon="logos:typeorm"></span>',
+          isHTML: true,
+        },
+        {
           class: "fa-brands fa-php",
           color: "#8993be",
           title: "PHP",
           isHTML: false,
         },
         {
-          class: "fa-brands fa-python",
+          class: "",
           color: "#FFE873",
           title: "Python",
-          isHTML: false,
+          innerHTML: '<span class="iconify" data-icon="logos:python"></span>',
+          isHTML: true,
         },
+
         {
           class: "fa-brands fa-java",
           color: "#f89820",
@@ -175,6 +215,14 @@ function App() {
           color: "#4DB33D",
           title: "MongoDB",
           isHTML: false,
+        },
+        {
+          class: "",
+          title: "PostgreSQL",
+          color: "#336791",
+          innerHTML:
+            '<span class="iconify" data-icon="logos:postgresql"></span>',
+          isHTML: true,
         },
       ],
       mainIconClass: "fa-solid fa-database",
@@ -332,7 +380,14 @@ function App() {
       with at that time, like Material-UI. `,
       thumbnail: "mundonovo-thumbnail.png",
       banner: "mundonovo-banner.png",
-      tags: ["HTML", "CSS", "ReactJS", "TypeScript", "Material-UI", "Atomic Design"],
+      tags: [
+        "HTML",
+        "CSS",
+        "ReactJS",
+        "TypeScript",
+        "Material-UI",
+        "Atomic Design",
+      ],
       repositoryUrl: "https://github.com/rachzy/portfolio-mundonovo",
       websiteUrl: "https://mundonovocafe.com.br/",
     },
