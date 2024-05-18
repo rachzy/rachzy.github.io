@@ -33,6 +33,10 @@
   transition: 0.2s all;
 }
 
+.widgets-container p {
+  font-size: 1.3rem;
+}
+
 .widgets-container b {
   font-weight: bold;
 }

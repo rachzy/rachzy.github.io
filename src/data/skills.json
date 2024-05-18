@@ -1,0 +1,188 @@
+[
+  {
+    "id": "frontend",
+    "title": "Front-end",
+    "icons": [
+      {
+        "class": "fa-brands fa-html5",
+        "color": "#e34c26",
+        "title": "HTML",
+        "isHTML": false
+      },
+      {
+        "class": "fa-brands fa-css3-alt",
+        "color": "#264de4",
+        "title": "CSS",
+        "isHTML": false
+      },
+      {
+        "class": "fa-brands fa-js",
+        "color": "#F0DB4F",
+        "title": "JavaScript",
+        "isHTML": false
+      },
+      {
+        "class": "",
+        "color": "#007acc",
+        "title": "TypeScript",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"cib:typescript\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "fa-brands fa-react",
+        "color": "#61DBFB",
+        "title": "React.JS",
+        "isHTML": false
+      },
+      {
+        "class": "",
+        "color": "#61DBFB",
+        "title": "React Native",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"tabler:brand-react-native\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "",
+        "color": "white",
+        "title": "Next.JS",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"akar-icons:nextjs-fill\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "",
+        "color": "#007fff",
+        "title": "Material-UI",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"logos:material-ui\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "",
+        "color": "#c1694f",
+        "title": "Zustand",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"twemoji:bear\"></span>",
+        "isHTML": true
+      }
+    ],
+    "mainIconClass": "fa-solid fa-code"
+  },
+  {
+    "id": "backend",
+    "title": "Back-end",
+    "icons": [
+      {
+        "class": "fa-brands fa-node-js",
+        "color": "#68A063",
+        "title": "Node.JS",
+        "isHTML": false
+      },
+      {
+        "class": "",
+        "title": "ExpressJS",
+        "color": "#f4f2ed",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"skill-icons:expressjs-light\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "",
+        "title": "NestJS",
+        "color": "#e0234e",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"logos:nestjs\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "",
+        "title": "TypeORM",
+        "color": "#ffab00",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"logos:typeorm\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "fa-brands fa-php",
+        "color": "#8993be",
+        "title": "PHP",
+        "isHTML": false
+      },
+      {
+        "class": "",
+        "color": "#FFE873",
+        "title": "Python",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"logos:python\"></span>",
+        "isHTML": true
+      },
+
+      {
+        "class": "fa-brands fa-java",
+        "color": "#f89820",
+        "title": "Java",
+        "isHTML": false
+      }
+    ],
+    "mainIconClass": "fa-solid fa-server"
+  },
+  {
+    "id": "databases",
+    "title": "Databases",
+    "icons": [
+      {
+        "class": "icon-mysql",
+        "color": "#00758f",
+        "title": "MySQL",
+        "isHTML": false
+      },
+      {
+        "class": "icon-mongodb",
+        "color": "#4DB33D",
+        "title": "MongoDB",
+        "isHTML": false
+      },
+      {
+        "class": "",
+        "title": "PostgreSQL",
+        "color": "#336791",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"logos:postgresql\"></span>",
+        "isHTML": true
+      }
+    ],
+    "mainIconClass": "fa-solid fa-database"
+  },
+  {
+    "id": "tools",
+    "title": "Tools",
+    "icons": [
+      {
+        "class": "",
+        "title": "VS Code",
+        "color": "#0078d7",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"bxl:visual-studio\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "",
+        "title": "IntelliJ IDEA",
+        "color": "#6B57FF",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"logos:intellij-idea\"></span>",
+        "isHTML": true
+      },
+      {
+        "class": "fa-brands fa-git-alt",
+        "color": "#F1502F",
+        "title": "Git",
+        "isHTML": false
+      },
+      {
+        "class": "fa-brands fa-docker",
+        "color": "#0db7ed",
+        "title": "Docker",
+        "isHTML": false
+      },
+      {
+        "class": "icon-shell",
+        "color": "gray",
+        "title": "Terminal",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"bi:terminal-fill\"></span>",
+        "isHTML": true
+      }
+    ],
+    "mainIconClass": "fa-solid fa-screwdriver-wrench"
+  }
+]

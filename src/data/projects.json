@@ -1,0 +1,144 @@
+[
+  {
+    "title": "Rede Sweden",
+    "briefDescription": "A Brazilian Complete Minecraft server focused on RankUP (redesweden.com)",
+    "description": "Sweden Network is a minecraft server that I created from scratch with my friend Augusto. It took my entire summer vacations and a full spigot course to make it, but I got awesome results, and it's my favorite project so far. It got more than 100 players online simultaneously, and it currently has hundreds of members on its Discord. I sold the project since I didn't have enough time to focus on it and for other personal reasons. The server is still online, and you can access it through the IP: redesweden.com",
+    "thumbnail": "sweden-thumbnail.png",
+    "banner": "sweden-banner.png",
+    "tags": ["Java", "MySQL"]
+  },
+  {
+    "title": "Oncoffee",
+    "briefDescription": "An e-commerce marketplace focused on selling anything related to coffee",
+    "description": "OnCoffee is an e-commerce marketplace that is focused on selling everything related to coffee, from simple coffee bags to coffee preparing machines. The project is being developed using JavaScript Slack (ReactJS and Node).",
+    "thumbnail": "oncoffee-thumbnail.png",
+    "banner": "oncoffee-banner.png",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Node", "MongoDB"],
+    "repositoryUrl": "https://github.com/rachzy/Oncoffee",
+    "websiteUrl": "https://rachzy.github.io/Oncoffee"
+  },
+  {
+    "title": "Fastalk",
+    "briefDescription": "A chat room web application with video-calls, which you even join in public rooms",
+    "description": "Fastalk was a Fast-Chat by Rooms website with video-calls that I loved developing. It got many users, but I shutted it down because I had no investment to keep it online. It was developed using PHP and JavaScript",
+    "thumbnail": "fastalk-thumbnail.png",
+    "banner": "fastalk-banner.png",
+    "tags": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    "repositoryUrl": "https://github.com/rachzy/fastalk"
+  },
+  {
+    "title": "Rede Cabral",
+    "briefDescription": "The portfolio of a Brazilian franchise.",
+    "description": "I was thrilled to be entrusted with the development of an exciting project for the renowned franchise, Rede Cabral, located in the vibrant region of  Minas Gerais. Leveraging the power of React and TypeScript, I meticulously crafted a collection of captivating landing pages that exude creativity and innovation. These pages seamlessly blend aesthetics with functionality, leaving a lasting impression on visitors.",
+    "thumbnail": "redecabral-thumbnail.png",
+    "banner": "redecabral-banner.png",
+    "tags": ["HTML", "CSS", "TypeScript", "React"],
+    "repositoryUrl": "https://github.com/rachzy/projeto-cabral",
+    "websiteUrl": "https://redecabral.com.br"
+  },
+  {
+    "title": "Agrocafé",
+    "briefDescription": "The portfolio of a company focused on the development of the agribusiness of Patrocínio.",
+    "description": "In this project, I developed a standout landing page for a reputable irrigation services company. Leveraging React and Typescript, I efficiently created a unique and impressive page. Despite the challenge of ensuring flawless performance across all devices, I successfully delivered an exceptional project. The client was delighted with the outcome, and I gained valuable experience in web development through this collaboration. Looking forward to future challenges!",
+    "thumbnail": "agrocafe2-thumbnail.png",
+    "banner": "agrocafe2-banner.png",
+    "tags": ["HTML", "CSS", "TypeScript", "React"],
+    "repositoryUrl": "https://github.com/rachzy/agrocafe-2",
+    "websiteUrl": "https://www.agrocafe.com"
+  },
+  {
+    "title": "Metahumans",
+    "briefDescription": "An application that allows you to compare two different metahumans and see who would win.",
+    "description": "Have you ever wondered who would win in a fight between Goku and Saitama? Well, that's the intent of this website! Here, you can choose two metahumans and put them to fight (statistically, of course). This application is connected to an API that contains hundreds of super heroes and villains from different universes, as well as their combat stats. I made this project as a test for Infominas, a company that I applied for a software development job (Spoiler: I passed!)",
+    "thumbnail": "metahumans-thumbnail.webp",
+    "banner": "metahumans-banner.png",
+    "tags": ["NextJS", "TypeScript", "Module-CSS", "Material-UI", "Zustand", "Atomic Design"],
+    "repositoryUrl": "https://github.com/rachzy/metahumans",
+    "websiteUrl": "https://jornada-do-heroi-iota.vercel.app/"
+  },
+  {
+    "title": "Agrocafé Irrigação",
+    "briefDescription": "The portfolio of a coffee irrigation company of Patrocínio.",
+    "description": "In this project, I developed a standout landing page for a reputable irrigation services company. Leveraging React and Typescript, I efficiently created a unique and impressive page. Despite the challenge of ensuring flawless performance across all devices, I successfully delivered an exceptional project. The client was delighted with the outcome, and I gained valuable experience in web development through this collaboration. Looking forward to future challenges!",
+    "thumbnail": "agrocafe-thumbnail.png",
+    "banner": "agrocafe-banner.jpg",
+    "tags": ["HTML", "CSS", "TypeScript", "React"],
+    "repositoryUrl": "https://github.com/rachzy/agrocafe",
+    "websiteUrl": "http://www.agrocafeirrigacao.com.br"
+  },
+  {
+    "title": "Hubtel",
+    "briefDescription": "A completely redesigned layout for the \"Services\" page of a Telecom company in Goiás.",
+    "description": "For this one, I had the job to recreate the layout of the \"Services\" page of a telecommunication company in Goiás. Me and my team were able to build something compact and quite modern, able to fit in the screens of every single device commonly used today. I've also worked on making the back-end able to work fine and attend the requirements of the new layout, leading me to modify the structure of the database and the application's legacy source code.",
+    "thumbnail": "hubtel-thumbnail.png",
+    "banner": "hubtel-banner.png",
+    "tags": ["HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+    "repositoryUrl": "https://github.com/rachzy/hubtel-planos",
+    "websiteUrl": "https://hubtel.com.br"
+  },
+  {
+    "title": "Mundo Novo",
+    "briefDescription": "The website of an agricultural company in Minas Gerais.",
+    "description": "A landing page for the website of \"Mundo Novo Café - Mercado e Sustentabilidade\", a well known agricultural company in eastern Minas Gerais. Working together with \"Portfolio\", a marketing agency, I was able to deliver a great job in a good time, which was really well seen by the client. I also used this opportunity to try some new technologies that I wasn't really familiarized with at that time, like Material-UI.",
+    "thumbnail": "mundonovo-thumbnail.png",
+    "banner": "mundonovo-banner.png",
+    "tags": [
+      "HTML",
+      "CSS",
+      "ReactJS",
+      "TypeScript",
+      "Material-UI",
+      "Atomic Design"
+    ],
+    "repositoryUrl": "https://github.com/rachzy/portfolio-mundonovo",
+    "websiteUrl": "https://mundonovocafe.com.br/"
+  },
+  {
+    "title": "HigheR",
+    "briefDescription": "A portfolio website for a fictional company that creates futuristic technology",
+    "description": "This project was a collaborative school assignment where I worked with three classmates to create a functional website for a company, real or fictional. We decided to invent our own fictional company called \"Higher\" that specialized in futuristic technology like hoverboards, holograms, and spaceships, which we were all passionate about. Our goal was to design a unique website that blended modern web application layouts with a completely original design. My specific role was to transform the design concept from Figma into a functional web application using React with TypeScript, aiming to deliver the best user experience possible.",
+    "thumbnail": "higher-thumbnail.png",
+    "banner": "higher-banner.png",
+    "tags": ["HTML", "CSS", "TypeScript", "React"],
+    "repositoryUrl": "https://github.com/oBST01/HigheR",
+    "websiteUrl": "https://rachzy.github.io/HigheR"
+  },
+  {
+    "title": "Geoespinhaço",
+    "briefDescription": "A demo website for a research made by a geography teacher.",
+    "description": "A Website developed for a teacher in my school, which was created together with my team in \"Farmando XP\", a project developed by my teacher Gilberto to help students that want to follow the career of software/web development to get some more experience and be able to find new opportunities as soon as possible. As it was our first project, we decided to go slow and make it simpler, but still we've reached something great and that could fit the wishes of the teacher, who loved it.",
+    "thumbnail": "geoespinhaco-thumbnail.svg",
+    "banner": "geoespinhaco-banner.png",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "repositoryUrl": "https://github.com/Farmando-XP/geoespinhaco",
+    "websiteUrl": "https://farmando-xp.github.io/geoespinhaco/"
+  },
+  {
+    "title": "Botânica",
+    "briefDescription": "A portfolio website for a virtual store of natural products.",
+    "description": "A portfolio developed for the owner of a virtual store, by me and my team in \"Farmando XP\", a project developed by my teacher Gilberto to help students that want to follow the career of software/web development to get some more experience and be able to find new opportunities as soon as possible. As our second project, we tried to make something more sophisticated than our last one, but we still didn't use any framework or new technology, since that wouldn't be necessary for such a small project. The final result was great and I loved to see the growth and evolution of my team along with the development! The owner of Botânica really liked the final result.",
+    "thumbnail": "botanica-thumbnail.png",
+    "banner": "botanica-banner.png",
+    "tags": ["HTML", "CSS"],
+    "repositoryUrl": "https://github.com/Farmando-XP/botanica",
+    "websiteUrl": "https://farmando-xp.github.io/botanica/"
+  },
+  {
+    "title": "Animeasy",
+    "briefDescription": "A mobile application to easily watch animes.",
+    "description": "Animeasy is a 'far from finished' project that I was developing just for fun to help users to watch, see infos and share any anime that they want easily, for free and wherever they want (It's not released, please don't sue me TV Tokyo). It has a really cool design, even tho it's not finished yet.",
+    "thumbnail": "animeasy-thumbnail.png",
+    "banner": "animeasy-thumbnail.png",
+    "tags": ["React Native", "Typescript"],
+    "repositoryUrl": "https://github.com/rachzy/animeasy"
+  },
+  {
+    "title": "Space Invaders",
+    "briefDescription": "The classic space invaders game!",
+    "description": "A game that I developed to learn more about pygame and train my python skills.",
+    "thumbnail": "spaceinvaders-thumbnail.png",
+    "banner": "spaceinvaders-banner.png",
+    "tags": ["Python"],
+    "repositoryUrl": "https://github.com/rachzy/space-invaders-game"
+  }
+]

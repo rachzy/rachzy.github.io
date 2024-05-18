@@ -1,15 +1,17 @@
-import { modal, project } from "../../App";
+import { IModal } from "../../interfaces/modal";
+import { IProject } from "../../interfaces/project";
+
 import Title from "../Title/Title";
 import "./ProjectItem.css";
 
 interface IProps {
-  project: project;
-  setModal: React.Dispatch<React.SetStateAction<modal>>;
+  project: IProject;
+  setModal: React.Dispatch<React.SetStateAction<IModal>>;
 }
 
 const ProjectItem: React.FC<IProps> = ({ project, setModal }) => {
   const handleButtonClick = () => {
-    const newModal: modal = {
+    const newModal: IModal = {
       title: project.title,
       description: project.description,
       buttons: [],
@@ -39,7 +41,6 @@ const ProjectItem: React.FC<IProps> = ({ project, setModal }) => {
           url: project.repositoryUrl,
         });
       }
-
     }
     setModal(newModal);
   };

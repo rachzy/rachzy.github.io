@@ -27,6 +27,7 @@
 
 .project img.thumbnail {
   width: 13vh;
+  height: 13vh;
   border-radius: 50%;
   background-color: #00001a;
   border: 2px solid red;

@@ -1,10 +1,9 @@
+import { ISkill } from "../../interfaces/skill";
 import SkillItem from "../SkillItem/SkillItem";
 import "./Skills.css";
 
-import { skill } from "../../App";
-
 interface IProps {
-  skills: skill[];
+  skills: ISkill[];
 }
 
 const Skills: React.FC<IProps> = ({ skills }) => {

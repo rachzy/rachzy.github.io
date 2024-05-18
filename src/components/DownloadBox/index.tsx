@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./DownloadBox.css";
-
-import { downloadOption } from "../../App";
+import { IDownloadOption } from "../../interfaces/downloadOption";
 
 interface IProps {
-  downloadOptions: downloadOption;
+  downloadOptions: IDownloadOption[];
   visible: boolean;
   setVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }

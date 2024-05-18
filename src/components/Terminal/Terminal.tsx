@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import "./Terminal.css";
 
-const Terminal = () => {
+const Terminal = ({ input, output }: { input: string; output: string }) => {
   const [commandLineText, setCommandLineText] = useState("");
   const [outputLineText, setOutputLineText] = useState("");
 
-  const commandLineValue =
-    'console.log("Just a guy vibin in Brazil with his cat and his girlfriend");';
-  const outputLineValue =
-    '> "Just a guy vibin in Brazil with his cat and his girlfriend"';
+  const commandLineValue = `console.log("${input}");`;
+  const outputLineValue = `> ${output}`;
 
   useEffect(() => {
     if (commandLineText.length >= commandLineValue.length) {

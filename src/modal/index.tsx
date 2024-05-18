@@ -1,11 +1,11 @@
 import React from "react";
-import { modal } from "../App";
 
 import "./Modal.css";
+import { IModal } from "../interfaces/modal";
 
 interface IProps {
-  modal: modal;
-  setModal: React.Dispatch<React.SetStateAction<modal>>;
+  modal: IModal;
+  setModal: React.Dispatch<React.SetStateAction<IModal>>;
 }
 
 const Modal: React.FC<IProps> = ({ modal, setModal }) => {

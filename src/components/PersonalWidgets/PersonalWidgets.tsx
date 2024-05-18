@@ -42,7 +42,8 @@ const PersonalWidgets = () => {
       <b>Birthday:</b> February, 25th <br>
       <b>Gender:</b> Male (He/Him) <br>
       <b>Location:</b> Minas Gerais, Brazil <br>
-      <b>Occupation:</b> Student <br>
+      <b>Occupation:</b> Full-Stack Developer at Unvoid <br>
+      <b>Student at:</b> Federal University of Uberlândia (UFU) <br>
       `,
     },
     {
@@ -52,7 +53,7 @@ const PersonalWidgets = () => {
       content: `
           <b>Institution:</b> Federal University of Uberlândia (UFU) <br>
         <b>Course:</b> Bachelor in Information Science<br>
-        <b>Duration:</b> 4 years (2024 - 2028)<br>
+        <b>Duration:</b> 4 years (2024 - 2027)<br>
         <b>Status:</b> Cursing<br> <br>
 
         <b>Institution:</b> Federal Institue of Triângulo Mineiro <br>
