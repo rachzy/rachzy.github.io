@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.27753744.css",
-    "main.js": "/static/js/main.7ccfd37e.js",
+    "main.css": "/static/css/main.1068c182.css",
+    "main.js": "/static/js/main.54a816f8.js",
     "static/media/botanica-thumbnail.png": "/static/media/botanica-thumbnail.fd8a62d6a07167465c5e.png",
     "static/media/sweden-banner.png": "/static/media/sweden-banner.841fe82f1be3135742ea.png",
     "static/media/redecabral-banner.png": "/static/media/redecabral-banner.28b74b79030a9a80f070.png",
-    "static/media/me.jpg": "/static/media/me.22bf3bbd32adabce7942.jpg",
     "static/media/mundonovo-banner.png": "/static/media/mundonovo-banner.b28d8cfe3c59eafea28b.png",
     "static/media/agrocafe2-banner.png": "/static/media/agrocafe2-banner.c32d5de02d02f67d5b71.png",
     "static/media/geoespinhaco-banner.png": "/static/media/geoespinhaco-banner.fdf261162207eedc042b.png",
     "static/media/higher-banner.png": "/static/media/higher-banner.93170e41a583f3aa6a93.png",
     "static/media/oncoffee-banner.png": "/static/media/oncoffee-banner.9b2e44cf5d4e5fa6eb04.png",
+    "static/media/metahumans-banner.png": "/static/media/metahumans-banner.7e59d240d321da371a46.png",
     "static/media/spaceinvaders-banner.png": "/static/media/spaceinvaders-banner.28dc71142f8b69802be8.png",
     "static/media/geoespinhaco-thumbnail.svg": "/static/media/geoespinhaco-thumbnail.a9ecf80b9326e3747cc9.svg",
     "static/media/higher-thumbnail.png": "/static/media/higher-thumbnail.80deaca63ba5cc44c645.png",
     "static/media/criarideias-banner.png": "/static/media/criarideias-banner.a16ef09603de2793bfbe.png",
     "static/media/oncoffee-thumbnail.png": "/static/media/oncoffee-thumbnail.81a8f62a022aca30b1af.png",
     "static/media/sweden-thumbnail.png": "/static/media/sweden-thumbnail.444c2076d0f89417750d.png",
-    "static/media/resume-portuguese-simplified.pdf": "/static/media/resume-portuguese-simplified.48f64203b5301979c622.pdf",
     "static/media/agrocafe-thumbnail.png": "/static/media/agrocafe-thumbnail.f3898504b83380ad893c.png",
-    "static/media/resume-portuguese.pdf": "/static/media/resume-portuguese.7fd5dbe20aa502152f0a.pdf",
-    "static/media/resume.pdf": "/static/media/resume.948ebcbe1f38b38969f9.pdf",
+    "static/media/resume-portuguese.pdf": "/static/media/resume-portuguese.1602b6ee0789c2e118ed.pdf",
+    "static/media/resume.pdf": "/static/media/resume.f9a374499cf875d6fad0.pdf",
     "static/media/animeasy-thumbnail.png": "/static/media/animeasy-thumbnail.6ff05ca114d2a75d7ec3.png",
     "static/media/agrocafe2-thumbnail.png": "/static/media/agrocafe2-thumbnail.3b0fe490d8584aad70af.png",
     "static/media/hubtel-banner.png": "/static/media/hubtel-banner.2d823f50a6941f2cf261.png",
@@ -32,12 +31,13 @@
     "static/media/TSChat.png": "/static/media/TSChat.077e2fec2fe78d85d541.png",
     "static/media/mundonovo-thumbnail.png": "/static/media/mundonovo-thumbnail.df181306785893532e01.png",
     "static/media/criarideias-thumbnail.png": "/static/media/criarideias-thumbnail.dd696ad6fa1652175268.png",
+    "static/media/metahumans-thumbnail.webp": "/static/media/metahumans-thumbnail.22f640301ed8493b2451.webp",
     "index.html": "/index.html",
-    "main.27753744.css.map": "/static/css/main.27753744.css.map",
-    "main.7ccfd37e.js.map": "/static/js/main.7ccfd37e.js.map"
+    "main.1068c182.css.map": "/static/css/main.1068c182.css.map",
+    "main.54a816f8.js.map": "/static/js/main.54a816f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.27753744.css",
-    "static/js/main.7ccfd37e.js"
+    "static/css/main.1068c182.css",
+    "static/js/main.54a816f8.js"
   ]
 }
