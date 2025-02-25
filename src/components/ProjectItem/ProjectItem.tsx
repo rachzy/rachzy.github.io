@@ -24,7 +24,7 @@ const ProjectItem: React.FC<IProps> = ({ project, setModal }) => {
       newModal.buttons?.push({
         title: "WEBSITE",
         url: project.websiteUrl,
-        color: "chartreuse",
+        color: "var(--primary-purple)",
       });
     }
 

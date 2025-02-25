@@ -63,5 +63,5 @@
 }
 
 .email {
-  color: #ff0000;
+  color: var(--primary-purple);
 }

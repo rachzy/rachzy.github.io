@@ -8,10 +8,10 @@
 
   font-family: "Poppins", sans-serif;
   font-size: 2.3vh;
-  color: #ff0000;
+  color: var(--primary-purple);
   white-space: nowrap;
 
-  border: 1px solid #ff0000;
+  border: 1px solid var(--primary-purple);
   border-radius: 1vh;
 
   cursor: pointer;
@@ -20,7 +20,7 @@
 
 .widget:hover {
   color: white;
-  background-color: #ff0000;
+  background-color: var(--primary-purple);
 }
 
 .widgets-disclaimer {

@@ -1,5 +1,5 @@
 button.default-btn {
-  background-color: #ff0000;
+  background-color: var(--primary-purple);
   width: 40vh;
 
   border: none;

@@ -76,18 +76,6 @@ const PersonalWidgets = () => {
       <b>English:</b> Fluent
       `,
     },
-    {
-      id: "story",
-      title: "My Story",
-      iconClass: "fa-solid fa-book",
-      content: `My first contact with lines of code came in 2018, when I tried to develop my own Roblox games using
-      Lua Script and Minecraft plugins using Java. Even though I didn't go too far on it in that time, my passion
-      for coding was born there. Some years later, in 2020, I started on Web-Developing and I created my first project:
-      Patrocitizens (Unfinished), which was supposed to be a social media for my city. I made it on PHP only.
-      In the end of 2020, I started the development of a project called Fastalk, which was a fast-chat with rooms.
-      I made it with PHP and some JavaScript in some parts. After ending that project, I started another one some 
-      months later with my friend, called OnCoffee, that I was developing using ReactJS and NodeJS.`,
-    },
   ];
 
   const handleWidgetClick = (widgetId: string) => {
@@ -117,7 +105,6 @@ const PersonalWidgets = () => {
 
   return (
     <div className="personal-widgets">
-      <Title>{"> More"}</Title>
       <div className="widgets-container">
         <div className="widgets" ref={widgetsDiv}>
           {returnWidgetButtons()}

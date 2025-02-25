@@ -10,7 +10,7 @@
 
   margin: 20px 10px;
   padding: 5vh 1vh;
-  border: 1px solid #ff0000;
+  border: 1px solid var(--primary-purple);
 
   white-space: nowrap;
   transition: 0.2s all;
@@ -19,5 +19,5 @@
 
 .skill-button:hover {
   transform: scale(1.05);
-  box-shadow: 1vh 0.3vh 3vh 1vh #ff0000;
+  box-shadow: 1vh 0.3vh 3vh 1vh var(--primary-purple);
 }

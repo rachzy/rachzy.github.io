@@ -28,7 +28,7 @@
 }
 
 .top-left-wrapper h2 {
-  color: #2eafd6;
+  color: var(--primary-blue);
   font-family: "Poppins", sans-serif;
   font-size: 4vh;
   font-weight: 500;

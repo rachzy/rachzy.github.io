@@ -11,7 +11,7 @@
   padding: 5px;
 
   border-radius: 2vh;
-  box-shadow: 1px 1px 10px 3px #ff0000;
+  box-shadow: 1px 1px 10px 3px var(--primary-purple);
 }
 
 .widgets-container h1 {

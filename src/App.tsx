@@ -41,12 +41,12 @@ function App() {
   return (
     <Fragment>
       <Modal modal={modal} setModal={setModal} />
-      <Header>
+      <Header id="home">
         <Menu />
         <LeftWrapper>
           <TopLeftWrapper id="main-text">
             <div className="greeting">
-              <p>👋 Hello World, my name is</p>
+              <p>👋 Hello World, I'm</p>
               <h1>Henrique</h1>
               <h2>Software Developer</h2>
               <Button

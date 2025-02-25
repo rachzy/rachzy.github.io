@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Nunito:wght@200&family=Poppins:wght@300&family=Roboto:wght@500&display=swap");
 
+:root {
+  --primary-purple: #ca08c0;
+  --secondary-purple: #4c2481;
+
+  --primary-blue: #2eafd6;
+  --secondary-blue: #150093;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin-top: 100vh;
   overflow-x: hidden;
