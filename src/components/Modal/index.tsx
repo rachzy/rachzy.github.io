@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Modal.css";
-import { IModal } from "../interfaces/modal";
+import { IModal } from "../../interfaces/modal";
 
 interface IProps {
   modal: IModal;
@@ -32,10 +32,10 @@ const Modal: React.FC<IProps> = ({ modal, setModal }) => {
         </a>
       );
     });
-  };
+  }
 
   function renderTags(): JSX.Element[] | null {
-    if(!modal.tags) return null;
+    if (!modal.tags) return null;
     return modal.tags?.map((tag) => {
       return <span key={tag}>{tag}</span>;
     });
@@ -56,14 +56,15 @@ const Modal: React.FC<IProps> = ({ modal, setModal }) => {
         <div className="modal-wrapper description">
           <h1>{modal.title}</h1>
           <p>{modal.description}</p>
-          <div className="modal-tags">
-          {renderTags()}
-        </div>
+          <div className="modal-tags">{renderTags()}</div>
           <div className="buttons-wrapper">{renderButtons()}</div>
         </div>
         {modal.image && (
           <div className="modal-wrapper image">
-            <img src={require(`../assets/${modal.image}`)} alt={modal.image} />
+            <img
+              src={require(`../../assets/${modal.image}`)}
+              alt={modal.image}
+            />
           </div>
         )}
       </div>

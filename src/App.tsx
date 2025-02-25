@@ -21,7 +21,7 @@ import Separator from "./components/Separator/Separator";
 import Skills from "./components/Skills/Skills";
 import Terminal from "./components/Terminal/Terminal";
 import TopLeftWrapper from "./components/TopLeftWrapper/TopLeftWrapper";
-import Modal from "./modal";
+import Modal from "./components/Modal";
 import DownloadBox from "./components/DownloadBox";
 
 import { IModal } from "./interfaces/modal";
