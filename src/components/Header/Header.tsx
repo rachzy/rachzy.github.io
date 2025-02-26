@@ -1,8 +1,8 @@
 import { MutableRefObject, useEffect, useRef, useState } from "react";
 import Title from "../Title/Title";
-import "./Menu.css";
+import "./Header.css";
 
-const Menu = () => {
+const Header = () => {
   const [currentScrollPosition, setCurrentScrollPosition] = useState(0);
 
   const menuRef = useRef() as MutableRefObject<HTMLDivElement>;
@@ -59,7 +59,7 @@ const Menu = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/phenrique.ferreira1001/">
+                <a href="https://www.instagram.com/rachenrique/">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
@@ -71,4 +71,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Header;

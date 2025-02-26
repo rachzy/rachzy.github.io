@@ -46,19 +46,19 @@ a {
   list-style: none;
 }
 
-.menu ul.navigator li {
+.menu ul.navigator a {
   cursor: pointer;
 
   color: white;
   font-size: 2.5vh;
 
-  padding: 1vh;
+  padding: 10px;
   border-radius: 8px;
 
   transition: 0.2s all;
 }
 
-.menu ul.navigator li:hover {
+.menu ul.navigator a:hover {
   background-color: var(--primary-purple);
 }
 
@@ -68,16 +68,11 @@ a {
   gap: 24px;
 }
 
-.menu ul.social-media li {
-  font-size: 2.5em;
-
-  cursor: pointer;
-  transition: 0.2s all;
-}
-
 .menu ul.social-media a {
   color: white;
   text-decoration: none;
+
+  font-size: 2.5em;
 
   cursor: pointer;
   transition: 0.2s all;

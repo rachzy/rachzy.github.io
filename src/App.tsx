@@ -6,7 +6,7 @@ import projects from "./data/projects.json";
 
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Menu from "./components/Menu/Menu";
+import Header from "./components/Header/Header";
 import PersonalInfo from "./components/PersonalInfo/PersonalInfo";
 import PersonalWidgets from "./components/PersonalWidgets/PersonalWidgets";
 import Projects from "./components/Projects/Projects";
@@ -33,7 +33,7 @@ function App() {
   return (
     <Fragment>
       <Modal modal={modal} setModal={setModal} />
-      <Menu />
+      <Header />
       <main className="main-content" id="home">
         <Greeting />
         <Terminal

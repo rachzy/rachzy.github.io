@@ -11,10 +11,9 @@ footer {
   width: 100%;
   text-align: center;
 
-  padding: 40px;
+  padding-block: 40px;
 
   overflow-x: hidden;
-  z-index: -999;
 
   p {
     font-size: 1.2em;
