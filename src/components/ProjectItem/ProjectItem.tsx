@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { IModal } from "../../interfaces/modal";
 import { IProject } from "../../interfaces/project";
 
@@ -45,20 +46,25 @@ const ProjectItem: React.FC<IProps> = ({ project, setModal }) => {
     setModal(newModal);
   };
   return (
-    <div className="project">
-      <div>
+    <Fragment>
+      <div className="project">
         <img
           className="thumbnail"
           src={require(`../../assets/${project.thumbnail}`)}
           alt={project.title}
         />
-        <Title color="white">{project.title}</Title>
+        <div>
+          <Title color="white">{project.title}</Title>
+          <p className="brief-description">{project.briefDescription}</p>
+        </div>
+        <div>
+          <button className="project-button" onClick={handleButtonClick}>
+            MORE DETAILS{" "}
+            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+        </div>
       </div>
-      <p className="brief-description">{project.briefDescription}</p>
-      <button className="project-button" onClick={handleButtonClick}>
-        MORE DETAILS <i className="fa-solid fa-arrow-up-right-from-square"></i>
-      </button>
-    </div>
+    </Fragment>
   );
 };
 

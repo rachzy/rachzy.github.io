@@ -2,14 +2,13 @@ section {
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
   align-items: center;
 
   padding-top: 5vh;
   padding-bottom: 5vh;
 
   width: 100%;
-  height: fit-content;
+  min-height: 100vh;
 }
 
 section h1.section-title {
@@ -27,7 +26,7 @@ section .section-content {
   align-items: center;
 
   width: 90%;
-  max-height: 90%;
+  height: 100%;
 }
 
 section .section-content.center {
@@ -39,5 +38,7 @@ section .section-content.center {
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
+
+    gap: 48px;
   }
 }

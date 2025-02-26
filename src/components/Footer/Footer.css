@@ -1,4 +1,9 @@
 footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
   left: 0;
 
@@ -6,10 +11,13 @@ footer {
   width: 100%;
   text-align: center;
 
-  height: 10vh;
+  padding: 40px;
 
-  font-size: 2.5vh;
-  font-weight: bold;
   overflow-x: hidden;
   z-index: -999;
+
+  p {
+    font-size: 1.2em;
+    margin: 0;
+  }
 }

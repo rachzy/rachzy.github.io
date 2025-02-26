@@ -3,11 +3,11 @@ a {
   color: white;
 }
 
-nav.menu {
+.menu {
   position: fixed;
   display: flex;
 
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
 
   background-color: rgba(14, 13, 22, 0.4);
@@ -15,33 +15,39 @@ nav.menu {
   width: 100%;
   height: 10vh;
 
-  font-weight: bold;
-
-  z-index: 999;
+  z-index: 99;
   transition: 0.2s all;
+
+  &.solid {
+    height: 7vh;
+    background-color: rgb(14, 13, 22);
+  }
+
+  .content {
+    display: flex;
+    width: 90%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: bold;
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
-nav.menu.solid {
-  height: 7vh;
-  background-color: rgb(14, 13, 22);
-}
-
-nav.menu h1 {
-  margin-left: 10px;
-}
-
-nav.menu ul {
+.menu ul {
   display: flex;
+
+  gap: 24px;
   list-style: none;
 }
 
-nav.menu ul.navigator {
-  width: 85%;
-}
-
-nav.menu ul.navigator li {
+.menu ul.navigator li {
   cursor: pointer;
-  margin-left: 2vh;
 
   color: white;
   font-size: 2.5vh;
@@ -52,24 +58,24 @@ nav.menu ul.navigator li {
   transition: 0.2s all;
 }
 
-nav.menu ul.navigator li:hover {
+.menu ul.navigator li:hover {
   background-color: var(--primary-purple);
 }
 
-nav.menu ul.social-media {
-  width: 20%;
+.menu ul.social-media {
+  display: flex;
+
+  gap: 24px;
 }
 
-nav.menu ul.social-media li {
-  margin-left: 3vh;
-
-  font-size: 4vh;
+.menu ul.social-media li {
+  font-size: 2.5em;
 
   cursor: pointer;
   transition: 0.2s all;
 }
 
-nav.menu ul.social-media a {
+.menu ul.social-media a {
   color: white;
   text-decoration: none;
 
@@ -77,35 +83,31 @@ nav.menu ul.social-media a {
   transition: 0.2s all;
 }
 
-nav.menu ul.social-media a:hover {
+.menu ul.social-media a:hover {
   color: var(--primary-purple);
 }
 
 @media only screen and (max-width: 820px) {
-  nav.menu {
+  .menu {
     background-color: rgb(14, 13, 22);
     text-align: center;
   }
 
-  nav.menu h1 {
+  .menu h1 {
     display: none;
   }
 
-  nav.menu ul.navigator {
+  .menu ul.navigator {
     margin-left: -2%;
     justify-content: center;
   }
 
-  nav.menu ul.navigator li {
+  .menu ul.navigator li {
     font-size: 13px;
     margin-left: 5px;
   }
 
-  nav.menu ul.social-media {
+  .menu ul.social-media {
     display: none;
-  }
-
-  .greeting h1 {
-    color: #ffffff;
   }
 }

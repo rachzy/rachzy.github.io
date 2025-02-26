@@ -1,3 +1,4 @@
+import "./Projects.css";
 import { Fragment } from "react";
 
 import { IModal } from "../../interfaces/modal";
@@ -12,7 +13,7 @@ interface IProps {
 
 const Projects: React.FC<IProps> = ({ projects, setModal }) => {
   return (
-    <Fragment>
+    <div className="projects-container">
       {projects.map((project) => {
         return (
           <ProjectItem
@@ -22,7 +23,7 @@ const Projects: React.FC<IProps> = ({ projects, setModal }) => {
           />
         );
       })}
-    </Fragment>
+    </div>
   );
 };
 

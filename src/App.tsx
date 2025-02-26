@@ -3,28 +3,21 @@ import "./App.css";
 
 import skills from "./data/skills.json";
 import projects from "./data/projects.json";
-import downloadOptions from "./data/downloadOptions.json";
 
-import BottomRightWrapper from "./components/BottomRightWrapper/BottomRightWrapper";
-import Button from "./components/Button/Button";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import LeftWrapper from "./components/LeftWrapper/LeftWrapper";
 import Menu from "./components/Menu/Menu";
 import PersonalInfo from "./components/PersonalInfo/PersonalInfo";
 import PersonalWidgets from "./components/PersonalWidgets/PersonalWidgets";
 import Projects from "./components/Projects/Projects";
-import RightWrapper from "./components/RightWrapper/RightWrapper";
 import Section from "./components/Section/Section";
 import Separator from "./components/Separator/Separator";
 import Skills from "./components/Skills/Skills";
 import Terminal from "./components/Terminal/Terminal";
-import TopLeftWrapper from "./components/TopLeftWrapper/TopLeftWrapper";
 import Modal from "./components/Modal";
-import DownloadBox from "./components/DownloadBox";
 
 import { IModal } from "./interfaces/modal";
+import Greeting from "./components/Greeting/Greeting";
 
 function App() {
   const [modal, setModal] = useState<IModal>({
@@ -34,45 +27,20 @@ function App() {
     buttons: [],
     enabled: false,
   });
-  const [resumeOptionsVisible, setResumeOptionsVisible] = useState(false);
 
   const ProfilePicture = require("./assets/fox.jpg");
 
   return (
     <Fragment>
       <Modal modal={modal} setModal={setModal} />
-      <Header id="home">
-        <Menu />
-        <LeftWrapper>
-          <TopLeftWrapper id="main-text">
-            <div className="greeting">
-              <p>👋 Hello World, I'm</p>
-              <h1>Henrique</h1>
-              <h2>Software Developer</h2>
-              <Button
-                onClick={() =>
-                  setResumeOptionsVisible((currentValue) => !currentValue)
-                }
-              >
-                <i className="fa-solid fa-download"></i> My Resume
-              </Button>
-              <DownloadBox
-                downloadOptions={downloadOptions}
-                visible={resumeOptionsVisible}
-                setVisible={setResumeOptionsVisible}
-              />
-            </div>
-          </TopLeftWrapper>
-        </LeftWrapper>
-        <RightWrapper>
-          <BottomRightWrapper>
-            <Terminal
-              input="Roses are red, violets are blue"
-              output="Syntax error, in line 32."
-            />
-          </BottomRightWrapper>
-        </RightWrapper>
-      </Header>
+      <Menu />
+      <main className="main-content" id="home">
+        <Greeting />
+        <Terminal
+          input="Roses are red, violets are blue"
+          output="Syntax error, in line 32."
+        />
+      </main>
       <Section id="about" title="About">
         <PersonalInfo
           pfp={{
@@ -92,7 +60,7 @@ function App() {
       <Section id="skills" title="Skills">
         <Skills skills={skills} />
       </Section>
-      <Section id="projects" title="Projects" center={true}>
+      <Section id="projects" title="Projects">
         <Projects projects={projects} setModal={setModal} />
       </Section>
       <Section id="contact" title="Contact">

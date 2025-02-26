@@ -22,15 +22,17 @@ const Terminal = ({ input, output }: { input: string; output: string }) => {
     }, 100);
   }, [commandLineText]);
   return (
-    <div className="terminal">
-      <div className="fakeMenu">
-        <div className="fakeButtons fakeClose"></div>
-        <div className="fakeButtons fakeMinimize"></div>
-        <div className="fakeButtons fakeZoom"></div>
-      </div>
-      <div className="fakeScreen">
-        <p id="command-line">{commandLineText}</p>
-        <p id="output-line">{outputLineText}</p>
+    <div className="terminal-container">
+      <div className="terminal">
+        <div className="fakeMenu">
+          <div className="fakeButtons fakeClose"></div>
+          <div className="fakeButtons fakeMinimize"></div>
+          <div className="fakeButtons fakeZoom"></div>
+        </div>
+        <div className="fakeScreen">
+          <p id="command-line">{commandLineText}</p>
+          <p id="output-line">{outputLineText}</p>
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,17 @@
+.terminal-container {
+  display: flex;
+
+  justify-content: flex-end;
+  width: 90%;
+}
+
 .terminal {
   background-color: rgba(20, 19, 19, 0.7);
 
-  width: 50vh;
-  height: 40vh;
+  width: 500px;
+  height: 400px;
 
-  font-size: 2.5vh;
+  font-size: 1.2em;
   color: var(--primary-blue);
 
   padding: 0px;
@@ -60,4 +67,10 @@
   padding: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .terminal-container {
+    justify-content: center;
+  }
 }

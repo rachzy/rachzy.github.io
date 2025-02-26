@@ -3,12 +3,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact-content">
-      <p className="contact-desc">
-        If you'd like to contact me for some reason, there are many ways to do
-        it! You can do it by sending me an email and I'll try to reply soon as
-        possible, but if you want to contact me directly and quickly, you can
-        text me in Discord, I'm online there most of the time.
-      </p>
+      <p className="contact-desc">You can reach me on:</p>
       <div className="contact-methods">
         <div className="contact-box email">
           <i className="fa-solid fa-envelope"></i> &nbsp;
