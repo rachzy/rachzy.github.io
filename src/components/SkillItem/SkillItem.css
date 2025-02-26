@@ -6,12 +6,12 @@
   align-items: center;
 
   border: 1px solid;
-  margin-left: 5vh;
-  margin-top: 3vh;
 
-  padding: 5vh;
-  width: 5vw;
-  height: 20vh;
+  padding: 40px;
+  width: 100px;
+  height: 200px;
+
+  margin: 0;
 
   transition: 0.2s all;
 }
@@ -20,18 +20,15 @@
   transform: scale(1.1);
 }
 
-.skill-smallbutton i {
-  font-size: 10vh;
+.skill-smallbutton i,
+svg {
+  font-size: 80px;
 }
 
 .skill-smallbutton div {
   margin: 0;
   padding: 0;
   height: fit-content;
-}
-
-.skill-smallbutton svg {
-  font-size: 10vh;
 }
 
 .skill-smallbutton p {

@@ -29,6 +29,12 @@
         "isHTML": true
       },
       {
+        "class": "fa-brands fa-angular",
+        "color": "#DD1B16",
+        "title": "AngularJS",
+        "isHTML": false
+      },
+      {
         "class": "fa-brands fa-react",
         "color": "#61DBFB",
         "title": "React.JS",
@@ -97,6 +103,13 @@
         "isHTML": true
       },
       {
+        "class": "",
+        "color": "#61DBFB",
+        "title": "GoLang",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"tabler:brand-golang\"></span>",
+        "isHTML": true
+      },
+      {
         "class": "fa-brands fa-php",
         "color": "#8993be",
         "title": "PHP",
@@ -109,12 +122,18 @@
         "innerHTML": "<span class=\"iconify\" data-icon=\"logos:python\"></span>",
         "isHTML": true
       },
-
       {
         "class": "fa-brands fa-java",
         "color": "#f89820",
         "title": "Java",
         "isHTML": false
+      },
+      {
+        "class": "",
+        "color": "#00C853",
+        "title": "C#",
+        "innerHTML": "<span class=\"iconify\" data-icon=\"logos:c-sharp\"></span>",
+        "isHTML": true
       }
     ],
     "mainIconClass": "fa-solid fa-server"
@@ -162,6 +181,12 @@
         "color": "#6B57FF",
         "innerHTML": "<span class=\"iconify\" data-icon=\"logos:intellij-idea\"></span>",
         "isHTML": true
+      },
+      {
+        "class": "fa-brands fa-unity",
+        "color": "#959595",
+        "title": "Unity",
+        "isHTML": false
       },
       {
         "class": "fa-brands fa-git-alt",

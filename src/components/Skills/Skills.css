@@ -2,11 +2,13 @@
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
-  padding: 5vh;
+  padding: 48px;
   text-align: center;
+
+  gap: 48px;
 
   height: fit-content;
   color: var(--primary-purple);
