@@ -3,7 +3,7 @@ a {
   color: white;
 }
 
-.menu {
+header {
   position: fixed;
   display: flex;
 
@@ -39,14 +39,14 @@ a {
   }
 }
 
-.menu ul {
+header ul {
   display: flex;
 
   gap: 24px;
   list-style: none;
 }
 
-.menu ul.navigator a {
+header ul.navigator a {
   cursor: pointer;
 
   color: white;
@@ -58,17 +58,17 @@ a {
   transition: 0.2s all;
 }
 
-.menu ul.navigator a:hover {
+header ul.navigator a:hover {
   background-color: var(--primary-purple);
 }
 
-.menu ul.social-media {
+header ul.social-media {
   display: flex;
 
   gap: 24px;
 }
 
-.menu ul.social-media a {
+header ul.social-media a {
   color: white;
   text-decoration: none;
 
@@ -78,31 +78,12 @@ a {
   transition: 0.2s all;
 }
 
-.menu ul.social-media a:hover {
+header ul.social-media a:hover {
   color: var(--primary-purple);
 }
 
 @media only screen and (max-width: 820px) {
-  .menu {
-    background-color: rgb(14, 13, 22);
-    text-align: center;
-  }
-
-  .menu h1 {
-    display: none;
-  }
-
-  .menu ul.navigator {
-    margin-left: -2%;
-    justify-content: center;
-  }
-
-  .menu ul.navigator li {
-    font-size: 13px;
-    margin-left: 5px;
-  }
-
-  .menu ul.social-media {
+  header {
     display: none;
   }
 }
