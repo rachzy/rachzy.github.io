@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1068c182.css",
-    "main.js": "/static/js/main.54a816f8.js",
+    "main.css": "/static/css/main.15d3975f.css",
+    "main.js": "/static/js/main.3cb0b650.js",
     "static/media/botanica-thumbnail.png": "/static/media/botanica-thumbnail.fd8a62d6a07167465c5e.png",
     "static/media/sweden-banner.png": "/static/media/sweden-banner.841fe82f1be3135742ea.png",
     "static/media/redecabral-banner.png": "/static/media/redecabral-banner.28b74b79030a9a80f070.png",
@@ -16,10 +16,10 @@
     "static/media/higher-thumbnail.png": "/static/media/higher-thumbnail.80deaca63ba5cc44c645.png",
     "static/media/criarideias-banner.png": "/static/media/criarideias-banner.a16ef09603de2793bfbe.png",
     "static/media/oncoffee-thumbnail.png": "/static/media/oncoffee-thumbnail.81a8f62a022aca30b1af.png",
+    "static/media/resume-portuguese.pdf": "/static/media/resume-portuguese.294d04cb93bbb20b3ad7.pdf",
+    "static/media/resume.pdf": "/static/media/resume.a2cbe1adda6bcd63f58e.pdf",
     "static/media/sweden-thumbnail.png": "/static/media/sweden-thumbnail.444c2076d0f89417750d.png",
     "static/media/agrocafe-thumbnail.png": "/static/media/agrocafe-thumbnail.f3898504b83380ad893c.png",
-    "static/media/resume-portuguese.pdf": "/static/media/resume-portuguese.1602b6ee0789c2e118ed.pdf",
-    "static/media/resume.pdf": "/static/media/resume.f9a374499cf875d6fad0.pdf",
     "static/media/animeasy-thumbnail.png": "/static/media/animeasy-thumbnail.6ff05ca114d2a75d7ec3.png",
     "static/media/agrocafe2-thumbnail.png": "/static/media/agrocafe2-thumbnail.3b0fe490d8584aad70af.png",
     "static/media/hubtel-banner.png": "/static/media/hubtel-banner.2d823f50a6941f2cf261.png",
@@ -33,11 +33,11 @@
     "static/media/criarideias-thumbnail.png": "/static/media/criarideias-thumbnail.dd696ad6fa1652175268.png",
     "static/media/metahumans-thumbnail.webp": "/static/media/metahumans-thumbnail.22f640301ed8493b2451.webp",
     "index.html": "/index.html",
-    "main.1068c182.css.map": "/static/css/main.1068c182.css.map",
-    "main.54a816f8.js.map": "/static/js/main.54a816f8.js.map"
+    "main.15d3975f.css.map": "/static/css/main.15d3975f.css.map",
+    "main.3cb0b650.js.map": "/static/js/main.3cb0b650.js.map"
   },
   "entrypoints": [
-    "static/css/main.1068c182.css",
-    "static/js/main.54a816f8.js"
+    "static/css/main.15d3975f.css",
+    "static/js/main.3cb0b650.js"
   ]
 }
