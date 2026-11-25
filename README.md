@@ -34,11 +34,13 @@ Routing is hash-based so GitHub Pages never returns a 404. Unknown hashes show H
 
 ## Replacing the art
 
-The hero is `public/media/killua.webm` (VP9) with an H.264 twin `killua.mp4` for Safari/iOS and a poster `killua-poster.jpg`, which is also shown when the visitor prefers reduced motion. Source video: a 1600x1600, 6 s seamless loop on black, drawn with `mix-blend-mode: screen`.
+The hero is `public/media/killua.webm` (VP9) with an H.264 twin `killua.mp4` for Safari/iOS and a poster `killua-poster.jpg`, which is also shown when the visitor prefers reduced motion. All three are built from `design-assets/killua2-hd3-with-eyes.webm` (1600x1600, 6 s seamless loop on black, 15 fps) and drawn with `mix-blend-mode: screen`.
+
+The source draws each stroke as two parallel edges with jagged steps. `scripts/hero-video/render.py` turns them into single smooth 2 px lines with a soft glow, keeps the light travelling along the strokes and the glowing pupils, and blends in-between frames for a 30 fps loop. Line width, threshold and spur length are constants at the top of the script.
 
 ```bash
-ffmpeg -i public/media/killua.webm -c:v libx264 -crf 22 -preset slow -pix_fmt yuv420p -movflags +faststart -an public/media/killua.mp4
-ffmpeg -ss 0.5 -i public/media/killua.webm -frames:v 1 -q:v 3 public/media/killua-poster.jpg
+python3 -m venv .venv && .venv/bin/pip install -r scripts/hero-video/requirements.txt
+.venv/bin/python scripts/hero-video/render.py design-assets/killua2-hd3-with-eyes.webm public/media
 ```
 
 ## Refreshing the resumes
