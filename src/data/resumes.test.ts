@@ -16,7 +16,7 @@ test("resumes order and names", () => {
 
 test("hrefs honor PUBLIC_URL", () => {
   const old = process.env.PUBLIC_URL;
-  process.env.PUBLIC_URL = "/sub";
+  (process.env as Record<string, string | undefined>).PUBLIC_URL = "/sub";
   jest.isolateModules(() => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const mod = require("./resumes");
@@ -24,5 +24,5 @@ test("hrefs honor PUBLIC_URL", () => {
       expect(r.href.startsWith("/sub/resumes/")).toBe(true);
     }
   });
-  process.env.PUBLIC_URL = old;
+  (process.env as Record<string, string | undefined>).PUBLIC_URL = old;
 });

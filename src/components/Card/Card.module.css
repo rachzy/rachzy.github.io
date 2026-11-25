@@ -1,0 +1,114 @@
+.stage {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: clamp(24px, 8vw, 140px);
+}
+
+.card {
+  --cut: 36px;
+  --inner-cut: 34.5px;
+  position: relative;
+  width: min(680px, 92vw, 88vh);
+  aspect-ratio: 1 / 1;
+  filter: drop-shadow(0 0 26px rgba(63, 169, 255, 0.38));
+}
+
+.edge {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #bfe3ff, #3fa9ff 40%, #1b5fbf);
+  clip-path: polygon(
+    var(--cut) 0,
+    100% 0,
+    100% calc(100% - var(--cut)),
+    calc(100% - var(--cut)) 100%,
+    0 100%,
+    0 var(--cut)
+  );
+}
+
+.face {
+  position: absolute;
+  inset: 1.5px;
+  overflow: hidden;
+  background: linear-gradient(
+    170deg,
+    rgba(10, 22, 48, 0.9),
+    rgba(5, 10, 23, 0.92) 60%
+  );
+  clip-path: polygon(
+    var(--inner-cut) 0,
+    100% 0,
+    100% calc(100% - var(--inner-cut)),
+    calc(100% - var(--inner-cut)) 100%,
+    0 100%,
+    0 var(--inner-cut)
+  );
+}
+
+.watermark {
+  position: absolute;
+  right: 4%;
+  top: 8%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  font-size: 300px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.06;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 72px 44px 20px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+@media (max-width: 900px) {
+  .stage {
+    position: absolute;
+    inset: 0;
+    padding: 16px;
+    display: block;
+  }
+
+  .card {
+    --cut: 26px;
+    --inner-cut: 24.5px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .face[data-route="home"],
+  .face[data-route="resume"] {
+    background: linear-gradient(
+      170deg,
+      rgba(10, 22, 48, 0.78),
+      rgba(5, 10, 23, 0.84) 60%
+    );
+  }
+
+  .watermark {
+    font-size: 230px;
+  }
+
+  .main {
+    bottom: 56px;
+    padding: 64px 22px 16px;
+  }
+}
