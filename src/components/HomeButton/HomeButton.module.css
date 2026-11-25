@@ -7,12 +7,10 @@
   align-items: center;
   gap: 8px;
   padding: 6px 4px;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-3);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #8fb4e0;
   transition: color 0.2s;
 }
 
@@ -32,7 +30,6 @@
   .home {
     left: 24px;
     top: 20px;
-    font-size: 16px;
   }
 }
 

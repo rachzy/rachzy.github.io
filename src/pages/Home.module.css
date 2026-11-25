@@ -37,7 +37,7 @@
   font-weight: 800;
   font-size: 34px;
   line-height: 1.05;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .fullName {
@@ -48,7 +48,8 @@
 
 .tagline {
   margin: 12px 0 0;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 1.45;
   color: var(--text-2);
   max-width: 28ch;
 }
@@ -83,6 +84,9 @@
 }
 
 @media (max-width: 900px) {
+  .name {
+    font-size: 36px;
+  }
   .avatar {
     width: 120px;
     height: 120px;

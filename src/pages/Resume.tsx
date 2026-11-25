@@ -16,8 +16,10 @@ export default function Resume() {
             className={styles.button}
           >
             <Flag code={r.flag} size={36} />
-            <span className={styles.label}>{r.label}</span>
-            <span className={styles.kind}>PDF</span>
+            <span className={styles.text}>
+              <span className={styles.label}>{r.label}</span>
+              <span className={styles.kind}>PDF</span>
+            </span>
             <DownloadIcon size={24} className={styles.download} />
           </a>
         ))}
