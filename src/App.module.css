@@ -1,0 +1,33 @@
+.page {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 260ms ease-out both;
+}
+
+.leaving {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 150ms ease-in, transform 150ms ease-in;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    animation: none;
+  }
+  .leaving {
+    transition: none;
+  }
+}

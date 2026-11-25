@@ -28,3 +28,23 @@ test("clicking a nav link switches the page", async () => {
     await screen.findByRole("heading", { level: 1, name: "Projects" })
   ).toBeInTheDocument();
 });
+
+test("old page stays until the fade-out ends, then the new one shows", async () => {
+  renderAt("");
+  userEvent.click(screen.getByRole("link", { name: "About" }));
+  // the nav already reflects the new route
+  await screen.findByRole("link", { name: "About", current: "page" });
+  expect(screen.getByRole("heading", { level: 1, name: "rachzy" })).toBeInTheDocument();
+  expect(
+    await screen.findByRole("heading", { level: 1, name: "About" })
+  ).toBeInTheDocument();
+});
+
+test("reduced motion swaps pages without waiting", async () => {
+  mockMatchMedia(true);
+  renderAt("");
+  userEvent.click(screen.getByRole("link", { name: "About" }));
+  expect(
+    await screen.findByRole("heading", { level: 1, name: "About" })
+  ).toBeInTheDocument();
+});
