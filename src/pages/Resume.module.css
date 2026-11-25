@@ -1,0 +1,62 @@
+.buttons {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.button {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 24px;
+  border: 1px solid var(--line);
+  background: rgba(8, 16, 36, 0.62);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 26px -6px var(--accent);
+}
+
+.label {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.kind {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.download {
+  margin-left: auto;
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .buttons {
+    margin-bottom: 70px;
+    gap: 12px;
+  }
+  .button {
+    height: 88px;
+    padding: 0 18px;
+  }
+  .label {
+    font-size: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
