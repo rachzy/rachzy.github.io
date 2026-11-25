@@ -23,3 +23,18 @@ test("every local href/src in index.html exists in public/", () => {
     expect(fs.existsSync(path.join(pub, rel))).toBe(true);
   }
 });
+
+test("no old-site leftovers", () => {
+  const root = path.resolve(__dirname, "..");
+  for (const p of [
+    "src/interfaces",
+    "src/data/projects.json",
+    "src/data/skills.json",
+    "src/assets",
+    "src/App.css",
+    "public/icons",
+    "public/about.txt",
+  ]) {
+    expect(fs.existsSync(path.join(root, p))).toBe(false);
+  }
+});
