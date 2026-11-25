@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt -- the spec mandates this alt text */
 import { profile } from "../data/profile";
 import { socials } from "../data/socials";
 import { socialIcons } from "../components/icons";

@@ -33,13 +33,11 @@
   text-align: center;
 }
 
+/* Mobile: the pager stays in the flow at the bottom of <main>, which ends
+   right above the NavBar, so it is anchored there without overlapping cards
+   on short screens. */
 @media (max-width: 900px) {
   .pager {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 68px;
-    margin-top: 0;
-    padding-top: 0;
+    padding-top: 10px;
   }
 }
