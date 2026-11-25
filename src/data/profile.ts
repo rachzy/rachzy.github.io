@@ -2,11 +2,13 @@ export const profile: {
   handle: string;
   fullName: string;
   tagline: string;
+  interests: string;
   note: string;
 } = {
   handle: "rachzy",
   fullName: "Henrique Ferreira",
   tagline: "Software engineer, currently working in OT cybersecurity.",
+  interests: "Cybersec, Machine Learning, Astrophysics",
   note: "BYI: I'm not interested on internships / non-remote jobs; I hate audios; I hv mod/sev ADHD; I usually forget answering people",
 };
 

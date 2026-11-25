@@ -2,8 +2,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end; /* design: buttons sit just above the NavBar */
   gap: 16px;
+  margin-bottom: 24px;
 }
 
 .button {
@@ -46,8 +47,8 @@
 
 @media (max-width: 900px) {
   .buttons {
-    margin-bottom: 70px;
-    gap: 12px;
+    margin-bottom: 54px;
+    gap: 14px;
   }
   .button {
     height: 88px;

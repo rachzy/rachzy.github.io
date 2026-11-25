@@ -39,3 +39,8 @@ test("social links are ordered and safe", () => {
     }
   });
 });
+
+test("shows the interests line", () => {
+  render(<Home />);
+  expect(screen.getByText(profile.interests)).toBeInTheDocument();
+});

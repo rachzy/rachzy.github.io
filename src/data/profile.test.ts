@@ -29,3 +29,7 @@ test("profile copy is verbatim", () => {
   expect(profile.handle).toBe("rachzy");
   expect(profile.fullName).toBe("Henrique Ferreira");
 });
+
+test("interests line is verbatim", () => {
+  expect(profile.interests).toBe("Cybersec, Machine Learning, Astrophysics");
+});
