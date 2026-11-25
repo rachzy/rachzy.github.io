@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { Route } from "./useHashRoute";
 import { useReducedMotion } from "./useReducedMotion";
 
-export const FADE_OUT_MS = 150;
+export const FADE_OUT_MS = 80;
 
 /**
  * Keeps showing the previous route while it fades out, then swaps to the new
