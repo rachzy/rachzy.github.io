@@ -1,0 +1,42 @@
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 8px;
+  color: var(--text-2);
+}
+
+.arrow {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover:not(:disabled) {
+  color: var(--accent);
+}
+
+.arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.page {
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Mobile: the pager stays in the flow at the bottom of <main>, which ends
+   right above the NavBar, so it is anchored there without overlapping cards
+   on short screens. */
+@media (max-width: 900px) {
+  .pager {
+    padding-top: 10px;
+  }
+}

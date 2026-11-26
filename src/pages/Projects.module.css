@@ -1,0 +1,141 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px 8px;
+  border: 1px solid var(--line);
+  background: rgba(8, 16, 36, 0.62);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 24px -8px var(--accent);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  flex: none;
+}
+
+.name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.description {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-3);
+  flex: 1;
+}
+
+.links {
+  display: flex;
+  gap: 2px;
+  margin-top: 6px;
+}
+
+.link {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-3);
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.project[data-featured="true"] {
+  border-color: rgba(255, 154, 61, 0.8);
+  background: linear-gradient(
+    160deg,
+    rgba(255, 154, 61, 0.1),
+    rgba(8, 16, 36, 0.62) 60%
+  );
+  animation: pulse 4.5s ease-in-out infinite;
+}
+
+.project[data-featured="true"]:hover {
+  animation: none;
+  border-color: #ff9a3d;
+  box-shadow: 0 0 34px -2px rgba(255, 154, 61, 0.85);
+}
+
+.project[data-featured="true"][data-reduced-motion="true"] {
+  animation: none;
+  box-shadow: 0 0 20px -4px rgba(255, 154, 61, 0.5);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 16px -4px rgba(255, 154, 61, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 32px -2px rgba(255, 154, 61, 0.7);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "top links" "desc desc";
+    align-items: center;
+    padding: 10px 14px;
+  }
+
+  .top {
+    grid-area: top;
+  }
+  .links {
+    grid-area: links;
+    margin-top: 0;
+  }
+  .description {
+    grid-area: desc;
+    margin-top: 6px;
+    font-size: 13px;
+  }
+  .name {
+    font-size: 17px;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project,
+  .link {
+    transition: none;
+  }
+  .project[data-featured="true"] {
+    animation: none;
+    box-shadow: 0 0 20px -4px rgba(255, 154, 61, 0.5);
+  }
+}

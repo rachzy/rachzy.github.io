@@ -1,0 +1,116 @@
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* avatar, name and tagline: centered in the space above the footer */
+.identity {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* note and social icons: anchored to the bottom, just above the NavBar */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 34px rgba(63, 169, 255, 0.45);
+  margin-bottom: 14px;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+}
+
+.fullName {
+  margin: 2px 0 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.tagline {
+  margin: 12px 0 0;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--text-2);
+  max-width: 28ch;
+}
+
+.love {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0 0;
+  font-size: 15px;
+  color: #b6c8e4;
+}
+
+.note {
+  margin: 0 0 6px;
+  padding: 0 9%;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.socials {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-3);
+  transition: color 0.2s, filter 0.2s;
+}
+
+.social:hover {
+  color: #fff;
+  filter: drop-shadow(0 0 6px var(--accent));
+}
+
+@media (max-width: 900px) {
+  /* the mobile design has no interests line on Home */
+  .love {
+    display: none;
+  }
+  .name {
+    font-size: 36px;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .note {
+    font-size: 12.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social {
+    transition: none;
+  }
+}

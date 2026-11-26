@@ -1,0 +1,39 @@
+.list {
+  margin: 0;
+  border-bottom: 1px solid rgba(110, 185, 255, 0.14);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 15px;
+  line-height: 1.35;
+  border-top: 1px solid rgba(110, 185, 255, 0.14);
+}
+
+.group {
+  margin-top: 12px;
+}
+
+.label {
+  color: var(--muted);
+}
+
+.value {
+  margin: 0;
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 104px 1fr;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+  .group {
+    margin-top: 10px;
+  }
+}

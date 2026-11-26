@@ -1,0 +1,48 @@
+.root {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--bg);
+}
+
+.sky {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 45% 60% at 72% 42%,
+    rgba(30, 110, 230, 0.26),
+    transparent 70%
+  );
+}
+
+.hero {
+  position: absolute;
+  right: -3vw;
+  top: -3vh;
+  height: 106vh;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  mix-blend-mode: screen;
+  -webkit-mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
+}
+
+@media (max-width: 900px) {
+  .sky {
+    background: radial-gradient(
+      ellipse 80% 45% at 50% 36%,
+      rgba(30, 110, 230, 0.3),
+      transparent 70%
+    );
+  }
+
+  .hero {
+    height: 844px;
+    right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
+}
